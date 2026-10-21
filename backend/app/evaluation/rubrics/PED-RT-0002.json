@@ -1,0 +1,262 @@
+
+{
+  "rubric_version": "1.0",
+  "case_id": "PED-RT-0002",
+  "title": "Adolescent with Cough and Fever",
+  "status": "draft_pending_clinical_review",
+  "total_points": 100,
+  "scoring_rules": {
+    "complete": 1.0,
+    "partial": 0.5,
+    "missing": 0.0,
+    "not_applicable": "exclude_and_normalize",
+    "require_session_evidence": true,
+    "do_not_infer_unobserved_actions": true,
+    "weights_are_provisional": true
+  },
+  "domains": [
+    {
+      "id": "communication",
+      "name": "Communication Skills",
+      "max_score": 15,
+      "evaluation_method": "ai_behavioral_rating",
+      "criteria": [
+        {
+          "id": "C01",
+          "description": "Introduces self and establishes rapport",
+          "max_score": 3
+        },
+        {
+          "id": "C02",
+          "description": "Uses clear and understandable language",
+          "max_score": 3
+        },
+        {
+          "id": "C03",
+          "description": "Demonstrates empathy toward the caregiver",
+          "max_score": 3
+        },
+        {
+          "id": "C04",
+          "description": "Responds appropriately to caregiver concerns",
+          "max_score": 3
+        },
+        {
+          "id": "C05",
+          "description": "Maintains a respectful and organized conversation",
+          "max_score": 3
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "name": "History Taking",
+      "max_score": 25,
+      "evaluation_method": "ai_semantic_checklist",
+      "criteria": [
+        {
+          "id": "H01",
+          "description": "Explores onset and duration of cough and fever",
+          "max_score": 4,
+          "expected_fields": [
+            "history.Onset_Duration",
+            "history.Chief_Complaint"
+          ]
+        },
+        {
+          "id": "H02",
+          "description": "Explores cough characteristics and severity",
+          "max_score": 4,
+          "expected_fields": [
+            "history.Cough"
+          ]
+        },
+        {
+          "id": "H03",
+          "description": "Explores fever and associated respiratory symptoms",
+          "max_score": 4,
+          "expected_fields": [
+            "history.Fever",
+            "history.Systems_Review"
+          ]
+        },
+        {
+          "id": "H04",
+          "description": "Asks about asthma and previous respiratory admissions",
+          "max_score": 5,
+          "expected_fields": [
+            "history.Past_Medical_History"
+          ]
+        },
+        {
+          "id": "H05",
+          "description": "Explores medications used before admission and response",
+          "max_score": 4,
+          "expected_fields": [
+            "history.Previous_Medications"
+          ]
+        },
+        {
+          "id": "H06",
+          "description": "Asks relevant additional history including allergies and associated symptoms",
+          "max_score": 4,
+          "expected_fields": [
+            "history.Allergy",
+            "history.Vomiting",
+            "history.Diarrhea",
+            "history.Activity"
+          ],
+          "note": "Assess asking relevant questions; do not penalize the learner because a chart field is undocumented."
+        }
+      ]
+    },
+    {
+      "id": "physical_examination",
+      "name": "Physical Examination",
+      "max_score": 20,
+      "evaluation_method": "deterministic_action_checklist",
+      "criteria": [
+        {
+          "id": "E01",
+          "description": "Assesses respiratory rate",
+          "max_score": 4,
+          "required_item_ids": [
+            "respiratory_rate"
+          ]
+        },
+        {
+          "id": "E02",
+          "description": "Checks pulse and temperature",
+          "max_score": 3,
+          "required_item_ids": [
+            "pulse",
+            "temperature"
+          ]
+        },
+        {
+          "id": "E03",
+          "description": "Performs chest examination",
+          "max_score": 5,
+          "required_item_ids": [
+            "chest"
+          ]
+        },
+        {
+          "id": "E04",
+          "description": "Assesses general appearance and consciousness",
+          "max_score": 5,
+          "required_item_ids": [
+            "general_appearance"
+          ]
+        },
+        {
+          "id": "E05",
+          "description": "Performs relevant cardiovascular examination",
+          "max_score": 3,
+          "required_item_ids": [
+            "heart"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "investigations",
+      "name": "Investigations",
+      "max_score": 15,
+      "evaluation_method": "hybrid_action_and_reasoning",
+      "criteria": [
+        {
+          "id": "I01",
+          "description": "Reviews chest X-ray when clinically justified",
+          "max_score": 5,
+          "required_item_ids": [
+            "chest_xray"
+          ]
+        },
+        {
+          "id": "I02",
+          "description": "Evaluates oxygenation using the available blood gas data when indicated",
+          "max_score": 5,
+          "relevant_item_ids": [
+            "abg_2",
+            "abg_5"
+          ],
+          "note": "ABG indices are pO2=2 and oxygen saturation=5 according to the current case menu."
+        },
+        {
+          "id": "I03",
+          "description": "Selects relevant infection or inflammation investigations when justified",
+          "max_score": 3,
+          "relevant_item_ids": [
+            "cbc_0",
+            "cbc_1",
+            "cbc_2",
+            "inflammatory_markers_0"
+          ]
+        },
+        {
+          "id": "I04",
+          "description": "Demonstrates appropriate and non-excessive investigation selection",
+          "max_score": 2,
+          "note": "Do not reward ordering every test. Judge appropriateness using the documented clinical context."
+        }
+      ]
+    },
+    {
+      "id": "clinical_reasoning",
+      "name": "Clinical Reasoning & Diagnosis",
+      "max_score": 25,
+      "evaluation_method": "ai_grounded_reasoning_assessment",
+      "criteria": [
+        {
+          "id": "D01",
+          "description": "Connects clinical history with examination findings",
+          "max_score": 6
+        },
+        {
+          "id": "D02",
+          "description": "Considers plausible differential diagnoses",
+          "max_score": 5
+        },
+        {
+          "id": "D03",
+          "description": "Recognizes the possible relationship between asthma and respiratory infection",
+          "max_score": 5
+        },
+        {
+          "id": "D04",
+          "description": "Selects a clinically supported final diagnosis",
+          "max_score": 5,
+          "diagnosis_reference": "ground_truth.final_diagnosis.diagnostic_assessment"
+        },
+        {
+          "id": "D05",
+          "description": "Justifies the diagnosis using supporting and conflicting evidence",
+          "max_score": 4,
+          "evidence_source": "diagnosis_justification"
+        }
+      ]
+    }
+  ],
+  "reference_policy": {
+    "assessment_framework": [
+      "MRCPCH Clinical Examination",
+      "OSCE-style checklist and behavioral rating"
+    ],
+    "medical_sources": [
+      {
+        "name": "Clinical Cases in Paediatrics",
+        "topics": [
+          "Bronchial Asthma",
+          "Pneumonia"
+        ],
+        "usage": "Candidate history and examination criteria; exact item-level extraction and verification pending"
+      },
+      {
+        "name": "Current pediatric respiratory clinical guidelines",
+        "usage": "Clinical verification of investigations and diagnoses"
+      }
+    ],
+    "require_clinician_approval_before_formal_use": true
+  }
+}

@@ -1,0 +1,657 @@
+{
+  "schema_version": "2.0",
+  "case_id": "PED-RT-0002",
+  "meta": {
+    "synthetic_educational": true,
+    "anonymized": false,
+    "review_status": "unreviewed",
+    "source": {
+      "hospital_alias": "Kafr El-Dawar General Hospital (Beheira)",
+      "pages": 24
+    },
+    "extraction": {
+      "model": "Claude Sonnet 5.5",
+      "runs": 1,
+      "date": "2026-10-06"
+    }
+  },
+  "patient": {
+    "alias": "Rodaina",
+    "age_years": 15,
+    "sex": "female",
+    "weight_kg": null,
+    "weight_confidence": null
+  },
+  "persona": {
+    "relation": "mother",
+    "name_alias": null,
+    "age_range": null,
+    "emotional_state": null,
+    "education": null,
+    "speech_style": null,
+    "verbosity": null,
+    "medical_vocabulary": null,
+    "quirks": []
+  },
+  "clinical": {
+    "encounter": {
+      "admission_date": "2026-08-05",
+      "discharge_date": "2026-08-11",
+      "department": "Pediatrics",
+      "disposition": "Discharged improved (good general condition per progress note 11/8)"
+    },
+    "diagnosis": {
+      "final": "Bronchopneumonia (written in English on the admission note and the admission/discharge sheet)",
+      "secondary": [
+        "Known bronchial asthma (history per admission note)"
+      ]
+    },
+    "vitals": {
+      "admission": {
+        "temperature_c": 37,
+        "pulse_bpm": 95,
+        "respiratory_rate": 32,
+        "bp": null,
+        "spo2": null
+      },
+      "trend_note": "Nursing vitals chart 5/8-11/8 (handwriting hard to read, low reliability): afebrile throughout (about 36.5-37.2 C); respiratory rate appears to fall from the 30s early in the stay to about 16-20 by discharge; pulse roughly 90-105; SpO2 values appear to be in the 90s and improving."
+    },
+    "exam": {
+      "general": "Good general condition on 2026-08-11 (progress note); admission general exam not legible",
+      "head_neck": null,
+      "chest": "Admission note: bilateral air entry with bilateral wheezes. Early progress note (date unclear): wheezy chest, decreased air entry, coarse crepitations, possible retractions. 10/8 and 11/8 notes: bilateral crepitations, wheeze on 10/8, equal air entry on 11/8 (handwriting uncertain).",
+      "heart": null,
+      "abdomen": "Lax abdomen (progress notes)",
+      "neuro": null,
+      "skin": null,
+      "hydration": null
+    },
+    "labs": [
+      {
+        "test": "CBC - WBC",
+        "date": "2026-08-05",
+        "result": "11.5 x10^3/uL",
+        "flag": "H"
+      },
+      {
+        "test": "CBC - NEU#",
+        "date": "2026-08-05",
+        "result": "4.70 x10^3/uL",
+        "flag": null
+      },
+      {
+        "test": "CBC - NEU%",
+        "date": "2026-08-05",
+        "result": "40.9 %",
+        "flag": null
+      },
+      {
+        "test": "CBC - LYM#",
+        "date": "2026-08-05",
+        "result": "5.75 x10^3/uL",
+        "flag": "H"
+      },
+      {
+        "test": "CBC - LYM%",
+        "date": "2026-08-05",
+        "result": "50.1 %",
+        "flag": null
+      },
+      {
+        "test": "CBC - MONO#",
+        "date": "2026-08-05",
+        "result": "0.728 x10^3/uL",
+        "flag": null
+      },
+      {
+        "test": "CBC - MONO%",
+        "date": "2026-08-05",
+        "result": "6.35 %",
+        "flag": null
+      },
+      {
+        "test": "CBC - EOS#",
+        "date": "2026-08-05",
+        "result": "0.188 x10^3/uL",
+        "flag": null
+      },
+      {
+        "test": "CBC - EOS%",
+        "date": "2026-08-05",
+        "result": "1.64 %",
+        "flag": null
+      },
+      {
+        "test": "CBC - BASO#",
+        "date": "2026-08-05",
+        "result": "0.112 x10^3/uL",
+        "flag": "H"
+      },
+      {
+        "test": "CBC - BASO%",
+        "date": "2026-08-05",
+        "result": "0.981 %",
+        "flag": null
+      },
+      {
+        "test": "CBC - RBC",
+        "date": "2026-08-05",
+        "result": "4.62 x10^6/uL",
+        "flag": null
+      },
+      {
+        "test": "CBC - HGB",
+        "date": "2026-08-05",
+        "result": "12.6 g/dL",
+        "flag": null
+      },
+      {
+        "test": "CBC - HCT",
+        "date": "2026-08-05",
+        "result": "38.8 %",
+        "flag": null
+      },
+      {
+        "test": "CBC - MCV",
+        "date": "2026-08-05",
+        "result": "83.9 fL",
+        "flag": null
+      },
+      {
+        "test": "CBC - MCH",
+        "date": "2026-08-05",
+        "result": "27.0 pg",
+        "flag": null
+      },
+      {
+        "test": "CBC - MCHC",
+        "date": "2026-08-05",
+        "result": "32.2 g/dL",
+        "flag": null
+      },
+      {
+        "test": "CBC - RDW",
+        "date": "2026-08-05",
+        "result": "11.0 %",
+        "flag": null
+      },
+      {
+        "test": "CBC - PLT",
+        "date": "2026-08-05",
+        "result": "363 x10^3/uL",
+        "flag": null
+      },
+      {
+        "test": "CBC - MPV",
+        "date": "2026-08-05",
+        "result": "7.68 fL",
+        "flag": null
+      },
+      {
+        "test": "CRP",
+        "date": null,
+        "result": "12 (handwritten on lab request form; unit and qualitative result not clearly legible)",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - pH (sample labeled arterial, 37C)",
+        "date": "2026-08-05",
+        "result": "7.41",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - pCO2",
+        "date": "2026-08-05",
+        "result": "32 mmHg",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - pO2",
+        "date": "2026-08-05",
+        "result": "48 mmHg",
+        "flag": "L"
+      },
+      {
+        "test": "Blood gas - Na+",
+        "date": "2026-08-05",
+        "result": "177 mmol/L (as printed; physiologically implausible, likely device/print error)",
+        "flag": "H"
+      },
+      {
+        "test": "Blood gas - K+",
+        "date": "2026-08-05",
+        "result": "2.8 mmol/L",
+        "flag": "L"
+      },
+      {
+        "test": "Blood gas - Ca++",
+        "date": "2026-08-05",
+        "result": "0.84 mmol/L",
+        "flag": "L"
+      },
+      {
+        "test": "Blood gas - Glucose",
+        "date": "2026-08-05",
+        "result": "116 mg/dL",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - Lactate",
+        "date": "2026-08-05",
+        "result": "1.6 mmol/L (faint print)",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - Hct",
+        "date": "2026-08-05",
+        "result": "about 36-38 % (faint print, low confidence)",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - Ca++ (7.4)",
+        "date": "2026-08-05",
+        "result": "0.84 mmol/L",
+        "flag": "L"
+      },
+      {
+        "test": "Blood gas - HCO3-",
+        "date": "2026-08-05",
+        "result": "20.3 mmol/L",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - HCO3 std",
+        "date": "2026-08-05",
+        "result": "21.8 mmol/L",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - TCO2",
+        "date": "2026-08-05",
+        "result": "21.3 mmol/L",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - BE(ecf)",
+        "date": "2026-08-05",
+        "result": "-4.3 mmol/L",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - BE(B)",
+        "date": "2026-08-05",
+        "result": "-3.6 mmol/L (faint print)",
+        "flag": null
+      },
+      {
+        "test": "Blood gas - sO2c",
+        "date": "2026-08-05",
+        "result": "84 %",
+        "flag": "L"
+      },
+      {
+        "test": "Blood gas - tHbc",
+        "date": "2026-08-05",
+        "result": "11.2 g/dL (faint print)",
+        "flag": null
+      }
+    ],
+    "imaging": [
+      {
+        "test": "Chest X-ray",
+        "date": "2026-08-04",
+        "result": "No formal radiology report in file. Admission note states the X-ray shows bronchopneumonia. Image label shows study date 2026/08/04 18:07 and no patient name."
+      }
+    ],
+    "treatment": {
+      "medications": [],
+      "other": [
+        "Admission note plan: IV antibiotic, nebulizer (further items illegible)",
+        "Peripheral IV cannula chart present; insertion about 2026-08-05, removal date not clearly legible",
+        "Doctor's orders and medication administration charts illegible - medications to be filled manually"
+      ]
+    },
+    "outcome": {
+      "status": "Improved",
+      "follow_up": null
+    }
+  },
+  "caregiver_knowledge": [
+    {
+      "id": "cc",
+      "category": "chief_complaint",
+      "known": true,
+      "statement_ar": "بنتي عندها كحة وسخونية.",
+      "facts": [
+        "Complaint on admission note: fever and cough",
+        "No information on wheeze or breathing difficulty as the mother's complaint"
+      ],
+      "volunteer_on_open_question": true,
+      "source_path": "Admission note 5/8/2026 (page 4, handwritten English)",
+      "confidence": "high",
+      "covers": "Main reason for the visit, in the caregiver's words"
+    },
+    {
+      "id": "onset",
+      "category": "onset_duration",
+      "known": true,
+      "statement_ar": "الكحة والسخونية بقالهم تلات أيام.",
+      "facts": [
+        "Cough and fever for about 3 days before admission",
+        "No information on how it progressed"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Admission note 5/8/2026 (page 4)",
+      "confidence": "medium",
+      "covers": "When symptoms started, how long, progression"
+    },
+    {
+      "id": "vomiting",
+      "category": "vomiting",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "No information on vomiting in the file"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Vomiting: presence, frequency, content"
+    },
+    {
+      "id": "diarrhea",
+      "category": "diarrhea",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "No information on diarrhea in the file"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Diarrhea: presence, frequency, stool appearance"
+    },
+    {
+      "id": "fever",
+      "category": "fever",
+      "known": true,
+      "statement_ar": "كانت سخنة مع الكحة بقالها تلات أيام.",
+      "facts": [
+        "Fever with cough for about 3 days per admission note",
+        "No information on the level of fever or how it was measured at home",
+        "Temperature on admission was 37 C (afebrile)"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Admission note (page 4); nursing admission vitals (page 17)",
+      "confidence": "medium",
+      "covers": "Fever: presence, level, how measured"
+    },
+    {
+      "id": "feeding",
+      "category": "feeding",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "No information on feeding or appetite"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Breast/formula/solids, appetite, recent changes"
+    },
+    {
+      "id": "urine",
+      "category": "urine_output",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "No information on urination"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Urination, wet diapers, hydration signs"
+    },
+    {
+      "id": "activity",
+      "category": "activity",
+      "known": true,
+      "statement_ar": "في الأغلب كانت راقدة هادية، وساعات كانت بتبان مضايقة شوية.",
+      "facts": [
+        "Lay quietly most of the time",
+        "Occasionally looked uncomfortable (grimacing)",
+        "Legs relaxed, normal position",
+        "No information on crying or how easily she was soothed"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Nursing FLACC pain form (page 19, page 3/4)",
+      "confidence": "low",
+      "covers": "Energy level, playfulness, sleep, crying"
+    },
+    {
+      "id": "past",
+      "category": "past_history",
+      "known": true,
+      "statement_ar": "عندها ربو من زمان، ودخلت المستشفى قبل كده تلات مرات بسبب التهاب رئوي، وآخر مرة كانت من سنة ونص تقريباً.",
+      "facts": [
+        "Known bronchial asthma",
+        "3 previous admissions for pneumonia",
+        "Last admission about 1.5 years ago",
+        "No information on surgeries or other illnesses"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Admission note 5/8/2026 (page 4)",
+      "confidence": "medium",
+      "covers": "Previous illnesses, admissions, surgeries"
+    },
+    {
+      "id": "birth",
+      "category": "birth_history",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "No birth history in the file"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Pregnancy, delivery type, gestational age, birth weight"
+    },
+    {
+      "id": "vaccines",
+      "category": "immunization",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "No vaccination information readable"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Vaccination status"
+    },
+    {
+      "id": "development",
+      "category": "development",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "No growth or development information"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Growth and developmental milestones"
+    },
+    {
+      "id": "homemeds",
+      "category": "home_medications",
+      "known": true,
+      "statement_ar": "إديتها علاج في البيت بس مفيش فايدة.",
+      "facts": [
+        "Home treatment was given and failed per admission note",
+        "Name and dose of the home medicines not known"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Admission note 5/8/2026 (page 4)",
+      "confidence": "medium",
+      "covers": "Drugs given before arrival"
+    },
+    {
+      "id": "allergy",
+      "category": "allergy",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "Allergy section of nursing admission form not legible"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Drug, food or other allergies"
+    },
+    {
+      "id": "family",
+      "category": "family_history",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "No family history in the file"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Illness in family, hereditary conditions"
+    },
+    {
+      "id": "social",
+      "category": "social",
+      "known": true,
+      "statement_ar": "عايشة مع أهلها في البيت.",
+      "facts": [
+        "Nursing admission form: lives with her family (checkbox)",
+        "No information on household size, living conditions or smoking"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Nursing admission assessment (page 17), social section",
+      "confidence": "low",
+      "covers": "Household, living conditions, who cares for the child"
+    },
+    {
+      "id": "stay",
+      "category": "hospital_stay",
+      "known": true,
+      "statement_ar": "دخلنا المستشفى يوم ٥/٨ وخرجنا يوم ١١/٨.",
+      "facts": [
+        "Admitted 2026-08-05",
+        "Discharged 2026-08-11",
+        "Pediatrics department"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Admission note (page 4); admission/discharge sheet (page 3); progress note 11/8 (page 8)",
+      "confidence": "medium",
+      "covers": "Admission course, duration, where admitted"
+    },
+    {
+      "id": "treatment",
+      "category": "treatment_given",
+      "known": true,
+      "statement_ar": "كانوا بيدوها علاج في الوريد وبخار.",
+      "facts": [
+        "Admission plan: IV antibiotic and nebulizer",
+        "IV cannula was placed",
+        "Actual drug names and doses illegible"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Admission note plan (page 4); cannula chart (page 23); doctor's orders (pages 5-6, mostly illegible)",
+      "confidence": "low",
+      "covers": "Medicines and treatments received in hospital"
+    },
+    {
+      "id": "tests",
+      "category": "tests_done",
+      "known": true,
+      "statement_ar": "عملولها تحاليل دم وأشعة على الصدر.",
+      "facts": [
+        "CBC",
+        "CRP",
+        "Blood gas",
+        "Chest X-ray",
+        "Mother was not given results in the file"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Lab printouts (pages 13-16), X-ray (page 12), admission note",
+      "confidence": "high",
+      "covers": "Blood tests, imaging and other tests performed or told results"
+    },
+    {
+      "id": "discharge",
+      "category": "discharge",
+      "known": true,
+      "statement_ar": "اتحسنت الحمد لله وخرجنا.",
+      "facts": [
+        "Good general condition on 11/8 progress note",
+        "Discharged improved"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": "Progress note 11/8 (page 8); admission/discharge sheet (page 3)",
+      "confidence": "medium",
+      "covers": "Condition at discharge and instructions"
+    },
+    {
+      "id": "followup",
+      "category": "discharge",
+      "known": false,
+      "statement_ar": null,
+      "facts": [
+        "Discharge instructions and follow-up not readable"
+      ],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Condition at discharge and instructions"
+    },
+    {
+      "id": "other1",
+      "category": "other",
+      "known": false,
+      "statement_ar": null,
+      "facts": [],
+      "volunteer_on_open_question": false,
+      "source_path": null,
+      "confidence": "n/a",
+      "covers": "Anything else not covered above"
+    }
+  ],
+  "unknown_policy": {
+    "default_replies_ar": [
+      "مش فاكرة يا دكتور.",
+      "معرفش، محدش قالي حاجة عن ده.",
+      "مخدتش بالي من الحاجة دي."
+    ],
+    "never_invent": true,
+    "disclose_numbers": false
+  },
+  "review_flags": [
+    "The template arrived already filled; all values were re-extracted from the PDF and earlier values not supported by the pages were removed (e.g. age 18 months, WBC 12.5/Hb 10.6 CBC, 20-day onset, vomiting, urea/creatinine/AST/ALT).",
+    "case_id set to PED-RT-0002 to match the file name; the template had PED-RT-0001.",
+    "Patient age (15 years = 180 months) was supplied by the requester, not found in the file; weight not recorded. The '1.5 years' in the admission note refers to the last pneumonia admission. FLACC (a young-child scale) was used on the nursing form despite the age.",
+    "Sex inferred from the first name only.",
+    "Doctor's orders (pages 5-6), medication administration charts (pages 9-11) and nursing notes (page 22) are illegible; medications left empty.",
+    "Admission/discharge sheet: most Arabic fields illegible; diagnosis taken from the English 'Broncho pneumonia' text and the admission note; discharge date and 'improved' partly inferred from the 11/8 progress note.",
+    "Final diagnosis and asthma history come from handwritten English notes; verify manually.",
+    "Conflicting vitals: ED ticket pulse 90 vs nursing admission pulse 95; chart readings on 5/8 differ slightly from the nursing form (RR 32 on form).",
+    "Admission SpO2 not clearly readable; left null.",
+    "CBC printout date reads 5/8/2026 (could be misread); inferred as 2026-08-05 from the admission date and the single CBC row on the lab sheet.",
+    "HGB value cell on the CBC printout is unreadable; 12.6 g/dL taken from the handwritten lab sheet and consistent with HCT/MCHC.",
+    "Analyzer interpretation lists Anemia, Leukocytosis, Lymphocytosis, Basophilia; Anemia flag conflicts with Hb 12.6 (likely a limit-set issue). H flags on WBC, LYM#, BASO# come from the analyzer text, not independent age-based ranges.",
+    "Blood gas sample labeled arterial but pO2 48 mmHg (sO2c 84 %) is venous-range or hypoxemic; verify sample type. Na+ printed as 177 mmol/L is implausible (possibly 137 or a device error) and K+ 2.8 is unusually low; Lactate, Hct, BE(B) and tHbc are faint prints read from a close-up image.",
+    "CRP: handwritten 12 on the lab request form; unit, positive/negative qualifier and date unclear.",
+    "Chest X-ray has no patient name and the device date (2026-08-04 18:07) is before the admission date; no formal report; confirm it belongs to this patient.",
+    "Persona not documented: relation assumed mother, all other persona fields left null.",
+    "Activity answer derived from FLACC marks (face 1, legs 0, activity 0); cry and consolability not visible, so the mother has no answer on crying; confidence low.",
+    "Treatment answer built from the admission plan (IV antibiotic, nebulizer) and the cannula chart; actual drugs unreadable; confidence low.",
+    "Social answer based on a checked box on the nursing admission form; low confidence.",
+    "Cannula chart dates only partly legible; removal date not confirmed."
+  ]
+}

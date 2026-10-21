@@ -1,0 +1,290 @@
+{
+  "_readme": {
+    "purpose": "Case blueprint organized by clinical logic (identity, timeline, vitals trend, labs trend, treatment, outcome) instead of by paper page order. This is meant to be consumed directly by an agent reasoning about the case as one continuous story.",
+    "traceability": "Every data point carries a source_page field referencing the original page name, so nothing loses its origin even though the structure is now clinical, not page-based.",
+    "source_pages_reference": [
+      "outpatient_clinic_referral",
+      "admission_discharge_sheet",
+      "personal_history",
+      "physical_examination",
+      "doctors_orders",
+      "daily_progress_notes",
+      "dermatology_consultation",
+      "xray_image",
+      "cbc_automated_report",
+      "lab_request_form_1",
+      "lab_request_form_2",
+      "lab_flow_sheet",
+      "discharge_summary",
+      "nursing_admission_assessment",
+      "vital_signs_chart"
+    ]
+  },
+  "identity": {
+    "patient_name": "Hana Mahmoud Saber Abdel Latif",
+    "national_id": "29051126812814",
+    "sex": "female",
+    "approx_age": "9 months",
+    "weight_kg": 8,
+    "address": "El Wast",
+    "social_status": "lives with family",
+    "allergy": false,
+    "adverse_drug_reaction": false,
+    "abuse_or_neglect_signs": false,
+    "psychological_status": "no problem",
+    "source_page": [
+      "admission_discharge_sheet",
+      "outpatient_clinic_referral",
+      "personal_history",
+      "nursing_admission_assessment"
+    ]
+  },
+  "encounter": {
+    "hospital_admission_no": "206897",
+    "hospital_name": "Kafr El Dawar General Hospital",
+    "admission_date": "2026-08-09",
+    "discharge_date": "2026-08-12",
+    "outcome": "improved",
+    "discharged_to": "home",
+    "source_page": "admission_discharge_sheet"
+  },
+  "presenting_problem": {
+    "chief_complaint": "projectile vomiting",
+    "present_history": "diarrhea",
+    "initial_systems_review": "all normal",
+    "source_page": "personal_history"
+  },
+  "clinical_timeline": [
+    {
+      "date": "2026-08-09",
+      "event_type": "admission_exam",
+      "findings": {
+        "temperature_c": 37.0,
+        "pulse": 110,
+        "respiration_rate": 40,
+        "general_appearance": "normal",
+        "chest": "normal",
+        "heart": "normal",
+        "abdomen": "normal",
+        "neurological": "normal"
+      },
+      "source_page": "physical_examination"
+    },
+    {
+      "date": "2026-08-10",
+      "event_type": "progress_note",
+      "findings": {
+        "general": "fair",
+        "chest": "clear",
+        "heart_sounds": "S1 S2 heard",
+        "abdomen": "soft",
+        "complaint": "severe diarrhea"
+      },
+      "source_page": "daily_progress_notes"
+    },
+    {
+      "date": "2026-08-09",
+      "event_type": "imaging",
+      "findings": {
+        "modality": "x-ray",
+        "body_part": "chest/abdomen",
+        "performed_at": "KD General Hospital"
+      },
+      "source_page": "xray_image"
+    },
+    {
+      "date": "2026-08-10",
+      "event_type": "consultation",
+      "findings": {
+        "specialty": "dermatology",
+        "reason": "skin rash",
+        "differential_diagnosis": "milia rubra",
+        "prescribed_treatment": [
+          "Dermo Calm lotion",
+          "Fucidin cream",
+          "Levohistam oral drops"
+        ]
+      },
+      "source_page": "dermatology_consultation"
+    },
+    {
+      "date": "2026-08-11",
+      "event_type": "progress_note",
+      "findings": {
+        "general": "fair",
+        "chest": "clear",
+        "heart_sounds": "S1 S2 heard",
+        "abdomen": "soft",
+        "complaint": "vomiting, fever, diarrhea"
+      },
+      "source_page": "daily_progress_notes"
+    },
+    {
+      "date": "2026-08-11",
+      "event_type": "discharge",
+      "findings": {
+        "hospital_course": "NG tube, normal cardiac follow-up (S1 S2 heard)",
+        "follow_up_instructions_given": true
+      },
+      "source_page": "discharge_summary"
+    }
+  ],
+  "vitals_trend": {
+    "unit_notes": "temperature in Celsius, respiration_rate in breaths/min",
+    "readings": [
+      {
+        "day": 1,
+        "pulse": 110,
+        "temperature_c": 37.0,
+        "respiration_rate": 55,
+        "source_page": "vital_signs_chart"
+      },
+      {
+        "day": 2,
+        "pulse": 120,
+        "temperature_c": 38.5,
+        "respiration_rate": 50,
+        "source_page": "vital_signs_chart"
+      },
+      {
+        "day": 3,
+        "pulse": 140,
+        "temperature_c": 36.5,
+        "respiration_rate": 43,
+        "source_page": "vital_signs_chart"
+      },
+      {
+        "day": 4,
+        "pulse": 120,
+        "temperature_c": 38.0,
+        "respiration_rate": 45,
+        "source_page": "vital_signs_chart"
+      },
+      {
+        "day": 5,
+        "pulse": 110,
+        "temperature_c": 37.0,
+        "respiration_rate": 40,
+        "source_page": "vital_signs_chart"
+      },
+      {
+        "day": 6,
+        "pulse": 118,
+        "temperature_c": 36.0,
+        "respiration_rate": 45,
+        "source_page": "vital_signs_chart"
+      }
+    ],
+    "trend_summary": "temperature spiked around day 2-4 then normalized by day 6; respiration rate gradually decreased from 55 to 45, indicating clinical improvement"
+  },
+  "labs_trend": {
+    "hematology": {
+      "collected_at": "2026-08-08T17:00:00",
+      "wbc": 4.6,
+      "lymphocyte_percent": 40.8,
+      "rbc": 3.94,
+      "hemoglobin": 8.8,
+      "hemoglobin_flag": "low - anemia",
+      "hematocrit": 26.7,
+      "mcv": 67.8,
+      "mcv_flag": "low - microcytic",
+      "mch": 22.3,
+      "mchc": 32.9,
+      "platelets": 276,
+      "source_page": "cbc_automated_report"
+    },
+    "chemistry_series": [
+      {
+        "collected_at": "2026-08-10",
+        "sodium": 135,
+        "potassium": 3.5,
+        "source_page": "lab_request_form_1"
+      },
+      {
+        "collected_at": "2026-08-11",
+        "sodium": 139,
+        "potassium": 3.0,
+        "creatinine": 0.3,
+        "urea": 22,
+        "crp": "negative",
+        "source_page": "lab_request_form_2"
+      }
+    ],
+    "flow_sheet_crosscheck": {
+      "hemoglobin": 8.8,
+      "rbc": 3.94,
+      "wbc": 4.6,
+      "platelets": 276,
+      "sodium": [
+        135,
+        134
+      ],
+      "potassium": [
+        3.5,
+        3.0
+      ],
+      "source_page": "lab_flow_sheet",
+      "note": "used to cross-validate values against cbc_automated_report and lab_request forms"
+    },
+    "trend_summary": "mild anemia with microcytic pattern on admission; electrolytes stayed within near-normal range with a slight downward drift in potassium between the two draws"
+  },
+  "treatment": {
+    "pre_admission_medications": [
+      {
+        "drug": "Danstasol",
+        "form": "syrup",
+        "dose": "8 small spoons",
+        "source_page": "outpatient_clinic_referral"
+      },
+      {
+        "drug": "Iswid Daman",
+        "form": "syrup",
+        "dose": "8 small spoons",
+        "source_page": "outpatient_clinic_referral"
+      },
+      {
+        "drug": "ORS",
+        "form": "solution",
+        "source_page": "outpatient_clinic_referral"
+      }
+    ],
+    "during_admission_medications": [
+      {
+        "drug": "Cefotax",
+        "source_page": "discharge_summary"
+      },
+      {
+        "drug": "Zinc",
+        "source_page": "discharge_summary"
+      },
+      {
+        "drug": "Nutriboost",
+        "source_page": "discharge_summary"
+      }
+    ],
+    "ordered_tests": {
+      "tests": [
+        "CBC",
+        "CRP",
+        "Urea",
+        "Creatinine",
+        "Sodium",
+        "Potassium"
+      ],
+      "order_dates": [
+        "2026-08-06",
+        "2026-08-11"
+      ],
+      "source_page": "doctors_orders"
+    }
+  },
+  "outcome_summary": {
+    "final_status": "improved",
+    "discharged_to": "home",
+    "hospital_course": "NG tube feeding support, normal cardiac exam throughout, resolution of fever and respiratory rate trending down before discharge",
+    "source_page": [
+      "discharge_summary",
+      "admission_discharge_sheet"
+    ]
+  }
+}

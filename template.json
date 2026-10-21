@@ -1,0 +1,38 @@
+{
+"schema_version": "2.0",
+"case_id": "UCI_REG_PEDS_APPENDICITIS_739",
+
+"simulation": {
+    "opening": { "patient_line": "I have pain in the lower right side of my abdomen." }
+},
+
+"patient": { "Age": 13.49, "Sex": "female", "Height": 158.0 },
+
+"history": { "Nausea": "no", "Dysuria": null },
+
+"physical_exam": { "Body_Temperature": 37.2, "Psoas_Sign": "no" },
+
+"laboratory_investigations": { "WBC_Count": 6.9, "CRP": 5.0 },
+
+"imaging": {
+    "ultrasound": {
+    "findings": { "Appendix_Diameter": 10.9, "Free_Fluids": "no" }
+    }
+},
+
+"clinical_scores": { "Alvarado_Score": 2.0 },
+
+"field_descriptions": {
+    "history.Nausea": "whether the patient feels nauseous or like vomiting",
+    "physical_exam.Body_Temperature": "body temperature in degrees Celsius",
+    "laboratory_investigations.CRP": "C-reactive protein level (mg/L)"
+},
+
+"ground_truth": {
+    "Diagnosis": "appendicitis",
+    "Severity": "uncomplicated",
+    "Management": "primary surgical"
+},
+
+"simulation_flow": [ ... ]
+}

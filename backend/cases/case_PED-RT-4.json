@@ -1,0 +1,593 @@
+{
+  "schema_version": "3.0",
+
+  "case_id": "PED-RT-0002",
+
+  "presentation": {
+    "title": "Adolescent with Cough and Fever",
+    "subtitle": "Pediatric Case",
+    "short_brief": "A 15-year-old female with known bronchial asthma presents with severe cough and fever for 3 days.",
+    "difficulty": "Intermediate",
+    "specialty": "Pediatrics",
+    "setting": "Pediatric Ward",
+    "estimated_duration_minutes": 15,
+    "thumbnail": "PED-RT-0002/cover.jpg"
+  },
+
+  "source": {
+    "dataset": "Kafr El-Dawar General Hospital (Beheira) - Restructured for simulation",
+    "data_fidelity": "Clinical values are copied from the source chart. null means the value was not reliably provided.",
+    "adaptation_notes": [
+      "Original source was an inpatient hospital chart adapted into a learner-facing pediatric simulation.",
+      "Patient alias Rodaina (15 years, female) with known bronchial asthma presenting with fever and cough for 3 days.",
+      "CBC, arterial blood gas, and chest X-ray findings documented from hospital records."
+    ]
+  },
+
+  "simulation": {
+    "type": "pediatric_clinical_simulation",
+    "setting": "pediatric ward",
+
+    "respondent": {
+      "role": "mother",
+      "relationship_to_patient": "mother",
+      "speaks_for_patient": true,
+      "reason": "The patient is a 15-year-old adolescent resting with respiratory symptoms; her mother answers clinical history questions."
+    },
+
+    "opening": {
+      "patient_line": "يا دكتور، بنتي بتكح جامد وعندها سخونية بقالها تلات أيام ومش بتتحسن خالص.",
+      "source_verbatim": false,
+      "derived_from": {
+        "chief_complaint": "cough and fever",
+        "duration": "3 days"
+      }
+    },
+
+    "chat_policy": {
+      "purpose": "history_taking_and_patient_conversation_only",
+
+      "allowed_sections": [
+        "patient",
+        "history",
+        "simulation.respondent",
+        "simulation.opening"
+      ],
+
+      "forbidden_sections": [
+        "physical_exam",
+        "laboratory_investigations",
+        "imaging",
+        "ground_truth"
+      ],
+
+      "physical_exam_instruction": "If the learner asks the mother to provide a physical examination finding or says they want to perform an examination, do not reveal the finding in chat. Tell the learner to use the Physical Examination section.",
+
+      "laboratory_instruction": "If the learner asks to see, retrieve, interpret, or list laboratory results in chat, do not provide the values. Tell the learner to use the Investigations section.",
+
+      "imaging_instruction": "If the learner asks to see or retrieve imaging in chat, do not provide the image or findings. Tell the learner to use the Imaging section.",
+
+      "diagnosis_instruction": "The mother must never provide or confirm the final diagnosis during the active session.",
+
+      "management_instruction": "Do not reveal hospital management or treatment course during the active session.",
+
+      "outcome_instruction": "Do not reveal the hospital outcome during the active session.",
+
+      "interpretation_instruction": "The mother must not interpret laboratory values, imaging, physical examination findings, or give medical conclusions.",
+
+      "general_knowledge_instruction": "Do not answer unrelated general-knowledge questions using model knowledge. Stay in character and redirect naturally to the clinical encounter.",
+
+      "missing_information_instruction": "If the requested history information is not present, the mother should naturally say she does not know, does not remember, or is not sure. Do not redirect missing history questions to physical examination unless examination is genuinely required to answer them.",
+
+      "response_style": "Natural, short, conversational, and consistent with an Egyptian mother speaking to a doctor."
+    },
+
+    "patient_actor_rules": [
+      "Always speak as the mother, answering in Egyptian Arabic when addressed in Arabic.",
+      "The mother knows she is the patient's mother and may state this directly.",
+      "Use only patient, history, respondent, and opening information for medical conversation.",
+      "Do not invent symptoms, duration, chronology, exposures, measurements, medications, or history.",
+      "Do not reveal physical examination findings through chat.",
+      "Do not reveal laboratory values through chat.",
+      "Do not reveal imaging findings through chat.",
+      "Do not reveal diagnosis, severity, management, or outcome during the active session.",
+      "Do not interpret medical results.",
+      "Do not answer unrelated factual or general-knowledge questions from model knowledge.",
+      "If information is absent, answer naturally that the mother does not know or does not remember."
+    ]
+  },
+
+  "patient": {
+    "Name": "Rodaina",
+    "Age": "15 years",
+    "Sex": "female",
+    "Weight": null,
+    "Social_Status": "lives with family (عايشة مع أهلها في البيت)"
+  },
+
+  "history": {
+    "Chief_Complaint": "كحة وسخونية بقالهم تلات أيام (severe cough and fever for 3 days)",
+    "Onset_Duration": "تلات أيام (3 days)",
+    "Cough": "كحة شديدة بقالها تلات أيام (severe cough for 3 days)",
+    "Fever": "سخنة مع الكحة بقالها تلات أيام (fever for 3 days)",
+    "Vomiting": "معندهاش ترجيع خالص (no vomiting)",
+    "Diarrhea": "معندهاش إسهال (no diarrhea)",
+    "Appetite_Feeding": null,
+    "Past_Medical_History": "عندها ربو شعبي من زمان، ودخلت المستشفى قبل كده 3 مرات بسبب التهاب رئوي، وآخر مرة كانت من سنة ونص تقريباً (known bronchial asthma, 3 previous hospitalizations for pneumonia, last one ~1.5 years ago)",
+    "Previous_Medications": "إديتها علاج في البيت بس مفيش فايدة ومتحسنتش (home medication given without improvement)",
+    "Allergy": null,
+    "Adverse_Drug_Reaction": null,
+    "Family_History": null,
+    "Activity": "في الأغلب راقدة هادية في السرير وساعات بتبان مضايقة شوية من الكحة والنهجان (lying quietly, occasionally uncomfortable)",
+    "Hospital_Stay": "دخلنا المستشفى يوم 5/8 وخرجنا يوم 11/8 بعد ما اتحسنت الحمد لله",
+    "Treatment_Received": "كانوا بيدوها علاج في الوريد وبخار (نيبولايزر)",
+    "Systems_Review": "كحة وسخونية، ومفيش شكاوى تانية واضحة"
+  },
+
+  "physical_exam": {
+    "Body_Temperature": {
+      "value": 37.0,
+      "unit": "°C"
+    },
+    "Pulse": {
+      "value": 95,
+      "unit": "beats/min"
+    },
+    "Respiratory_Rate": {
+      "value": 32,
+      "unit": "breaths/min"
+    },
+    "General_Appearance": "Good general condition, alert, conscious, afebrile",
+    "Chest": "Bilateral air entry with bilateral wheezes; coarse crepitations noted, tachypneic",
+    "Heart": "Normal heart sounds S1 and S2, regular pulse 95 bpm, no murmurs",
+    "Abdomen": "Lax abdomen, soft, non-tender, no organomegaly",
+    "Neurological": "Conscious, alert, oriented, normal tone and reflexes",
+    "Skin_Rash": "No rash, normal skin turgor"
+  },
+
+  "physical_exam_ui": {
+    "title": "Physical Examination",
+    "instruction": "Select an examination item to reveal its documented finding.",
+    "items": [
+      {
+        "id": "temperature",
+        "label": "Body Temperature",
+        "path": "physical_exam.Body_Temperature"
+      },
+      {
+        "id": "pulse",
+        "label": "Pulse",
+        "path": "physical_exam.Pulse"
+      },
+      {
+        "id": "respiratory_rate",
+        "label": "Respiratory Rate",
+        "path": "physical_exam.Respiratory_Rate"
+      },
+      {
+        "id": "general_appearance",
+        "label": "General Appearance",
+        "path": "physical_exam.General_Appearance"
+      },
+      {
+        "id": "chest",
+        "label": "Chest Examination",
+        "path": "physical_exam.Chest"
+      },
+      {
+        "id": "heart",
+        "label": "Cardiovascular Examination",
+        "path": "physical_exam.Heart"
+      },
+      {
+        "id": "abdomen",
+        "label": "Abdominal Examination",
+        "path": "physical_exam.Abdomen"
+      },
+      {
+        "id": "neurological",
+        "label": "Neurological Examination",
+        "path": "physical_exam.Neurological"
+      },
+      {
+        "id": "skin",
+        "label": "Skin Examination",
+        "path": "physical_exam.Skin_Rash"
+      }
+    ]
+  },
+
+  "laboratory_investigations": {
+    "WBC_Count": 11.5,
+    "Neutrophil_Count": 4.70,
+    "Neutrophil_Percent": 40.9,
+    "Lymphocyte_Count": 5.75,
+    "Lymphocyte_Percent": 50.1,
+    "Monocyte_Count": 0.728,
+    "Monocyte_Percent": 6.35,
+    "Eosinophil_Count": 0.188,
+    "Eosinophil_Percent": 1.64,
+    "Basophil_Count": 0.112,
+    "Basophil_Percent": 0.981,
+    "RBC_Count": 4.62,
+    "Hemoglobin": 12.6,
+    "Hematocrit": 38.8,
+    "MCV": 83.9,
+    "MCH": 27.0,
+    "MCHC": 32.2,
+    "RDW": 11.0,
+    "Platelet_Count": 363,
+    "MPV": 7.68,
+    "CRP": 12,
+    "ABG_pH": 7.41,
+    "ABG_pCO2": 32,
+    "ABG_pO2": 48,
+    "ABG_Potassium": 2.8,
+    "ABG_Calcium": 0.84,
+    "ABG_Glucose": 116,
+    "ABG_Lactate": 1.6,
+    "ABG_HCO3": 20.3,
+    "ABG_BE": -4.3,
+    "ABG_sO2c": 84,
+    "ABG_tHbc": 11.2
+  },
+
+  "investigations_ui": {
+    "title": "Investigations",
+    "instruction": "Select the investigations you want to review, then continue to view the documented results.",
+
+    "groups": [
+      {
+        "id": "cbc",
+        "label": "Complete Blood Count",
+        "items": [
+          {
+            "label": "WBC Count",
+            "path": "laboratory_investigations.WBC_Count"
+          },
+          {
+            "label": "Neutrophil %",
+            "path": "laboratory_investigations.Neutrophil_Percent"
+          },
+          {
+            "label": "Lymphocyte %",
+            "path": "laboratory_investigations.Lymphocyte_Percent"
+          },
+          {
+            "label": "RBC Count",
+            "path": "laboratory_investigations.RBC_Count"
+          },
+          {
+            "label": "Hemoglobin",
+            "path": "laboratory_investigations.Hemoglobin"
+          },
+          {
+            "label": "Hematocrit",
+            "path": "laboratory_investigations.Hematocrit"
+          },
+          {
+            "label": "MCV",
+            "path": "laboratory_investigations.MCV"
+          },
+          {
+            "label": "Platelet Count",
+            "path": "laboratory_investigations.Platelet_Count"
+          }
+        ]
+      },
+
+      {
+        "id": "inflammatory_markers",
+        "label": "Inflammatory Markers",
+        "items": [
+          {
+            "label": "CRP",
+            "path": "laboratory_investigations.CRP"
+          }
+        ]
+      },
+
+      {
+        "id": "abg",
+        "label": "Arterial Blood Gas",
+        "items": [
+          {
+            "label": "pH",
+            "path": "laboratory_investigations.ABG_pH"
+          },
+          {
+            "label": "pCO2",
+            "path": "laboratory_investigations.ABG_pCO2"
+          },
+          {
+            "label": "pO2",
+            "path": "laboratory_investigations.ABG_pO2"
+          },
+          {
+            "label": "HCO3",
+            "path": "laboratory_investigations.ABG_HCO3"
+          },
+          {
+            "label": "Potassium (K+)",
+            "path": "laboratory_investigations.ABG_Potassium"
+          },
+          {
+            "label": "Oxygen Saturation (sO2)",
+            "path": "laboratory_investigations.ABG_sO2c"
+          }
+        ]
+      }
+    ]
+  },
+
+  "imaging": {
+    "xray": {
+      "available": true,
+      "study_name": "Chest X-ray",
+      "body_part": "chest",
+      "image_asset": "PED-RT-0002/xray.jpg",
+      "report_result": "Chest X-ray shows bronchopneumonia with bilateral peribronchial infiltrates and hyperinflation in a known asthmatic patient.",
+      "report_status": "available"
+    }
+  },
+
+  "imaging_ui": {
+    "title": "Imaging",
+    "instruction": "Select an available imaging study to review it.",
+    "studies": [
+      {
+        "id": "chest_xray",
+        "label": "Chest X-ray",
+        "type": "xray",
+        "image_path": "imaging.xray.image_asset",
+        "report_path": "imaging.xray.report_result"
+      }
+    ],
+    "missing_report_text": "A written radiology report is not available for this study."
+  },
+
+  "learner_assessment": {
+    "enabled": true,
+    "trigger": "end_session",
+
+    "end_session_button": {
+      "label": "End Session",
+      "confirmation_title": "End this clinical encounter?",
+      "confirmation_message": "Once you end the session, history taking will stop and you will be asked to submit your final diagnosis."
+    },
+
+    "final_diagnosis": {
+      "title": "What is your final diagnosis?",
+      "instruction": "Select the diagnosis that best explains the case.",
+      "type": "single_choice",
+      "allow_free_text": false,
+
+      "options": [
+        {
+          "id": "bronchopneumonia",
+          "label": "Bronchopneumonia"
+        },
+        {
+          "id": "acute_asthma_exacerbation",
+          "label": "Acute Bronchial Asthma Exacerbation"
+        },
+        {
+          "id": "acute_bronchiolitis",
+          "label": "Acute Bronchiolitis"
+        },
+        {
+          "id": "gastroenteritis",
+          "label": "Acute Gastroenteritis"
+        }
+      ]
+    },
+
+    "feedback": {
+      "correct_title": "Correct Diagnosis",
+      "incorrect_title": "Incorrect Diagnosis",
+      "show_correct_answer_after_submission": true,
+      "show_debrief_after_submission": true
+    }
+  },
+
+  "ground_truth": {
+    "visibility": "hidden_until_session_end",
+
+    "final_diagnosis": {
+      "option_id": "bronchopneumonia",
+      "label": "Bronchopneumonia",
+      "accepted_labels": [
+        "bronchopneumonia",
+        "broncho pneumonia",
+        "pneumonia"
+      ]
+    },
+
+    "secondary_findings": [
+      "Known bronchial asthma (history per admission note)",
+      "Hypoxemia (pO2 48 mmHg, sO2 84% on arterial blood gas)",
+      "Hypokalemia (K+ 2.8 mmol/L)",
+      "Leukocytosis with lymphocytosis (WBC 11.5 x10^3/uL, Lymphocytes 5.75 x10^3/uL)"
+    ],
+
+    "severity": "Moderate to severe acute respiratory illness",
+
+    "management_in_source_chart": [
+      "Hospital admission to Pediatrics ward (5/8 to 11/8)",
+      "IV antibiotics",
+      "Nebulizer therapy (bronchodilators)",
+      "Peripheral IV cannula placement and supportive care"
+    ],
+
+    "outcome_in_source_chart": "Discharged improved in good general condition on 2026-08-11.",
+
+    "debrief": {
+      "summary": "The patient is a 15-year-old female with known bronchial asthma presenting with fever and cough for 3 days. Diagnostic workup and chest X-ray confirmed bronchopneumonia superimposed on her asthma. Laboratory tests revealed leukocytosis, hypokalemia, and hypoxemia. Managed with IV antibiotics and nebulizers with good recovery.",
+
+      "learning_points": [
+        "In patients with bronchial asthma, new onset of fever, crepitations, and leukocytosis strongly suggests a bacterial or viral bronchopneumonia triggering exacerbation.",
+        "A measured hospital temperature of 37°C does not negate caregiver-reported 3 days of prior fever at home.",
+        "Blood gas analysis is essential: hypoxemia (pO2 48 mmHg) and hypokalemia (K 2.8 mmol/L) demand close attention in acute respiratory patients.",
+        "History taking focuses on symptom chronology, previous illnesses, and home medications before proceeding to physical exam and investigations."
+      ]
+    }
+  },
+
+  "field_descriptions": {
+    "simulation.opening.patient_line": "the mother's chief complaint about her daughter's severe cough and fever",
+    "simulation.respondent.role": "who is answering the doctor's questions during the encounter",
+    "simulation.respondent.relationship_to_patient": "the respondent's relationship to the patient",
+    "simulation.respondent.speaks_for_patient": "whether the caregiver is answering on behalf of the patient",
+
+    "patient.Name": "the patient's name",
+    "patient.Age": "the patient's age",
+    "patient.Sex": "the patient's sex",
+    "patient.Weight": "the patient's weight",
+    "patient.Social_Status": "the patient's living and family situation",
+
+    "history.Chief_Complaint": "main complaint and reason for presentation: cough and fever for 3 days",
+    "history.Onset_Duration": "when symptoms started and how long they lasted (3 days)",
+    "history.Cough": "characteristics, severity, and duration of the cough",
+    "history.Fever": "fever presence, duration, and temperature before or at presentation",
+    "history.Vomiting": "whether the patient had vomiting or nausea",
+    "history.Diarrhea": "whether the patient had diarrhea or loose stools",
+    "history.Past_Medical_History": "past illnesses, chronic bronchial asthma, and previous hospitalizations for pneumonia",
+    "history.Previous_Medications": "medicines taken at home before coming to the hospital",
+    "history.Allergy": "known drug or food allergies",
+    "history.Adverse_Drug_Reaction": "previous adverse drug reactions",
+    "history.Family_History": "family history of asthma or hereditary conditions",
+    "history.Activity": "patient's energy level, resting status, and general behavior at home",
+    "history.Hospital_Stay": "hospital admission and discharge dates and duration of stay",
+    "history.Treatment_Received": "medicines and treatments received in hospital like IV antibiotics and nebulizers",
+    "history.Systems_Review": "review of other body systems and other symptoms",
+
+    "physical_exam.Body_Temperature": "measured body temperature during examination",
+    "physical_exam.Pulse": "measured pulse or heart rate",
+    "physical_exam.Respiratory_Rate": "measured respiratory rate",
+    "physical_exam.General_Appearance": "general physical appearance and mental status on examination",
+    "physical_exam.Chest": "chest auscultation, breath sounds, wheezes, crepitations, and air entry",
+    "physical_exam.Heart": "cardiovascular examination and heart sounds",
+    "physical_exam.Abdomen": "abdominal examination findings",
+    "physical_exam.Neurological": "neurological examination findings",
+    "physical_exam.Skin_Rash": "skin examination and presence or absence of rash",
+
+    "laboratory_investigations.WBC_Count": "white blood cell count",
+    "laboratory_investigations.Neutrophil_Count": "absolute neutrophil count",
+    "laboratory_investigations.Neutrophil_Percent": "neutrophil percentage",
+    "laboratory_investigations.Lymphocyte_Count": "absolute lymphocyte count",
+    "laboratory_investigations.Lymphocyte_Percent": "lymphocyte percentage",
+    "laboratory_investigations.Monocyte_Count": "monocyte count",
+    "laboratory_investigations.Monocyte_Percent": "monocyte percentage",
+    "laboratory_investigations.Eosinophil_Count": "eosinophil count",
+    "laboratory_investigations.Eosinophil_Percent": "eosinophil percentage",
+    "laboratory_investigations.Basophil_Count": "basophil count",
+    "laboratory_investigations.Basophil_Percent": "basophil percentage",
+    "laboratory_investigations.RBC_Count": "red blood cell count",
+    "laboratory_investigations.Hemoglobin": "hemoglobin level",
+    "laboratory_investigations.Hematocrit": "hematocrit percentage",
+    "laboratory_investigations.MCV": "mean corpuscular volume",
+    "laboratory_investigations.MCH": "mean corpuscular hemoglobin",
+    "laboratory_investigations.MCHC": "mean corpuscular hemoglobin concentration",
+    "laboratory_investigations.RDW": "red cell distribution width",
+    "laboratory_investigations.Platelet_Count": "platelet count",
+    "laboratory_investigations.MPV": "mean platelet volume",
+    "laboratory_investigations.CRP": "C-reactive protein level",
+    "laboratory_investigations.ABG_pH": "arterial blood gas pH",
+    "laboratory_investigations.ABG_pCO2": "arterial blood gas pCO2",
+    "laboratory_investigations.ABG_pO2": "arterial blood gas pO2 (oxygen partial pressure)",
+    "laboratory_investigations.ABG_Potassium": "serum potassium from blood gas",
+    "laboratory_investigations.ABG_Calcium": "serum calcium from blood gas",
+    "laboratory_investigations.ABG_Glucose": "blood glucose from blood gas",
+    "laboratory_investigations.ABG_Lactate": "blood lactate level",
+    "laboratory_investigations.ABG_HCO3": "serum bicarbonate from blood gas",
+    "laboratory_investigations.ABG_BE": "base excess from blood gas",
+    "laboratory_investigations.ABG_sO2c": "calculated arterial oxygen saturation",
+    "laboratory_investigations.ABG_tHbc": "total hemoglobin from blood gas",
+
+    "imaging.xray.available": "whether the chest X-ray is available",
+    "imaging.xray.study_name": "name of the radiographic study",
+    "imaging.xray.body_part": "body part imaged",
+    "imaging.xray.report_result": "written chest X-ray findings and report"
+  },
+
+  "simulation_flow": [
+    {
+      "phase": 1,
+      "name": "case_start",
+      "release": [
+        "presentation",
+        "patient.Age",
+        "patient.Sex",
+        "simulation.opening.patient_line"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "history_taking",
+      "interaction": "chat",
+      "release_on_request": [
+        "patient",
+        "history",
+        "simulation.respondent"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "physical_examination",
+      "interaction": "physical_exam_ui",
+      "release_via": "physical_exam_ui"
+    },
+    {
+      "phase": 4,
+      "name": "investigations",
+      "interaction": "investigations_ui",
+      "release_via": "investigations_ui"
+    },
+    {
+      "phase": 5,
+      "name": "imaging",
+      "interaction": "imaging_ui",
+      "release_via": "imaging_ui"
+    },
+    {
+      "phase": 6,
+      "name": "end_session",
+      "trigger": "learner_clicks_end_session",
+      "locks_chat": true
+    },
+    {
+      "phase": 7,
+      "name": "final_diagnosis",
+      "collect": [
+        "learner_assessment.final_diagnosis"
+      ]
+    },
+    {
+      "phase": 8,
+      "name": "diagnosis_feedback",
+      "compare_against": "ground_truth.final_diagnosis.option_id"
+    },
+    {
+      "phase": 9,
+      "name": "debrief",
+      "reveal": [
+        "ground_truth.final_diagnosis",
+        "ground_truth.secondary_findings",
+        "ground_truth.debrief"
+      ]
+    }
+  ],
+
+  "data_quality": {
+    "missing_history_fields": [
+      "patient.Weight",
+      "history.Appetite_Feeding",
+      "history.Allergy",
+      "history.Family_History"
+    ],
+    "manual_review_flags": [
+      "Blood gas Na+ of 177 was physiologically implausible and omitted.",
+      "Home medication names were not readable in handwritten hospital notes."
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": "2.0",
+  "case_id": "OPD_PEDS_INFANT_VOMITING_DIARRHEA_001",
+  "source": {
+    "dataset": "Scanned hospital chart, restructured for simulation",
+    "data_fidelity": "Medical values are copied from the source chart. null means the value was not provided.",
+    "adaptation_notes": [
+      "Original chart was an inpatient admission; converted to an outpatient clinic visit. Admission/discharge details, NG tube, and hospital course moved to ground_truth.",
+      "Respiratory_Rate: chart had 40 (physical exam sheet) and 55 (day-1 vitals chart). 40 was used.",
+      "Sodium: lab form had 139, flow sheet had 134. 139 was used. Chemistry taken from the later lab form (has the full set).",
+      "Patient name is fictional. National ID, address, hospital name and admission number were removed.",
+      "history.Fever is null: fever appears only in the inpatient notes, not in the pre-visit history. Author may fill it.",
+      "X-ray result is not in the source, so it is null.",
+      "ground_truth.Diagnosis_Presumptive is a DRAFT: the chart never states a diagnosis."
+    ]
+  },
+  "simulation": {
+    "type": "outpatient_clinic_visit",
+    "setting": "pediatric outpatient clinic",
+    "respondent": "mother",
+    "opening": {
+      "patient_line": "Doctor, my baby keeps vomiting forcefully, and now she has diarrhea too.",
+      "source_verbatim": false,
+      "derived_from": {
+        "chief_complaint": "projectile vomiting",
+        "present_history": "diarrhea"
+      }
+    },
+    "information_policy": {
+      "patient_actor_can_access": [
+        "patient",
+        "history"
+      ],
+      "physical_exam_released_only_when_examined": true,
+      "laboratory_results_released_only_when_requested": true,
+      "imaging_released_only_when_requested": true,
+      "ground_truth_hidden_until_debrief": true,
+      "missing_value_policy": "Never invent missing information. If a value is null, report it as not documented."
+    },
+    "patient_actor_rules": [
+      "The baby cannot speak; the mother answers on her behalf, in first person as the mother.",
+      "Use only information contained in patient and history.",
+      "Do not invent symptoms, duration, vital signs, or history.",
+      "Do not reveal laboratory results or imaging findings before they are requested.",
+      "Do not reveal diagnosis, severity, management, or outcome.",
+      "If asked about information not present in the source, say the mother does not know."
+    ]
+  },
+  "patient": {
+    "Name": "Nour Ahmed Hassan",
+    "Age": "9 months",
+    "Sex": "female",
+    "Weight": 8,
+    "Social_Status": "lives with family"
+  },
+  "history": {
+    "Vomiting": "projectile (forceful)",
+    "Diarrhea": "yes",
+    "Fever": null,
+    "Systems_Review": "no other complaints",
+    "Previous_Medications": "Danstasol syrup (8 small spoons), Iswid Daman syrup (8 small spoons), and ORS solution",
+    "Allergy": "no",
+    "Adverse_Drug_Reaction": "no"
+  },
+  "physical_exam": {
+    "Body_Temperature": 37.0,
+    "Pulse": 110,
+    "Respiratory_Rate": 40,
+    "General_Appearance": "normal",
+    "Chest": "normal, clear",
+    "Heart": "normal, S1 S2 heard",
+    "Abdomen": "normal, soft",
+    "Neurological": "normal",
+    "Skin_Rash": "yes"
+  },
+  "laboratory_investigations": {
+    "WBC_Count": 4.6,
+    "Lymphocyte_Percent": 40.8,
+    "RBC_Count": 3.94,
+    "Hemoglobin": 8.8,
+    "Hematocrit": 26.7,
+    "MCV": 67.8,
+    "MCH": 22.3,
+    "MCHC": 32.9,
+    "Platelet_Count": 276,
+    "Sodium": 139,
+    "Potassium": 3.0,
+    "Creatinine": 0.3,
+    "Urea": 22,
+    "CRP": "negative"
+  },
+  "imaging": {
+    "xray": {
+      "findings": {
+        "Xray_Performed": "yes",
+        "Body_Part": "chest and abdomen",
+        "Result": null
+      }
+    }
+  },
+  "field_descriptions": {
+    "simulation.opening.patient_line": "the mother's chief complaint: what is wrong with the baby, why they came, what the baby suffers from, the main problem",
+    "patient.Name": "the baby's name",
+    "patient.Age": "the baby's age",
+    "patient.Sex": "the baby's sex (boy or girl)",
+    "patient.Weight": "the baby's weight in kilograms",
+    "patient.Social_Status": "who the baby lives with, home and family situation",
+    "history.Vomiting": "whether the baby vomits (throwing up), and the type of vomiting, e.g. projectile or forceful",
+    "history.Diarrhea": "whether the baby has diarrhea or loose stools",
+    "history.Fever": "whether the baby had a fever at home before the visit",
+    "history.Systems_Review": "any other complaints or symptoms in other body systems (cough, breathing, urine, etc.)",
+    "history.Previous_Medications": "medicines or treatments the baby already received or the mother already gave before this visit",
+    "history.Allergy": "any known allergy (drug, food)",
+    "history.Adverse_Drug_Reaction": "any previous bad reaction to a medicine",
+    "physical_exam.Body_Temperature": "body temperature in degrees Celsius; fever",
+    "physical_exam.Pulse": "pulse or heart rate",
+    "physical_exam.Respiratory_Rate": "respiratory rate, breathing rate per minute",
+    "physical_exam.General_Appearance": "general appearance of the baby on examination",
+    "physical_exam.Chest": "chest examination, lung sounds",
+    "physical_exam.Heart": "heart examination, heart sounds",
+    "physical_exam.Abdomen": "abdominal examination, belly",
+    "physical_exam.Neurological": "neurological examination",
+    "physical_exam.Skin_Rash": "whether a skin rash is present on examination",
+    "laboratory_investigations.WBC_Count": "white blood cell count (WBC) in the CBC",
+    "laboratory_investigations.Lymphocyte_Percent": "lymphocyte percentage in the CBC",
+    "laboratory_investigations.RBC_Count": "red blood cell count (RBC) in the CBC",
+    "laboratory_investigations.Hemoglobin": "hemoglobin (Hb) level",
+    "laboratory_investigations.Hematocrit": "hematocrit (HCT)",
+    "laboratory_investigations.MCV": "mean corpuscular volume (MCV)",
+    "laboratory_investigations.MCH": "mean corpuscular hemoglobin (MCH)",
+    "laboratory_investigations.MCHC": "mean corpuscular hemoglobin concentration (MCHC)",
+    "laboratory_investigations.Platelet_Count": "platelet count",
+    "laboratory_investigations.Sodium": "serum sodium (Na)",
+    "laboratory_investigations.Potassium": "serum potassium (K)",
+    "laboratory_investigations.Creatinine": "serum creatinine, kidney function",
+    "laboratory_investigations.Urea": "serum urea, kidney function",
+    "laboratory_investigations.CRP": "C-reactive protein (CRP)",
+    "imaging.xray.findings.Xray_Performed": "whether an X-ray was performed",
+    "imaging.xray.findings.Body_Part": "which body part the X-ray covered",
+    "imaging.xray.findings.Result": "the X-ray result or findings, what the X-ray showed"
+  },
+  "ground_truth": {
+    "visibility": "hidden_from_learner",
+    "review_status": "DRAFT - the source chart does not state a diagnosis. Must be confirmed by the case author or a clinician.",
+    "Diagnosis_Presumptive": "acute gastroenteritis (vomiting and diarrhea)",
+    "Secondary_Findings": "microcytic anemia (low hemoglobin, low MCV); low potassium; skin rash with dermatology differential of milia rubra",
+    "Severity": null,
+    "Management_in_source_chart": "Hospitalized about 3 days: cefotaxime, zinc, Nutriboost, NG tube feeding support. Rash treated with Dermo Calm lotion, Fucidin cream, Levohistam oral drops.",
+    "Outcome_in_source_chart": "Improved; fever resolved and respiratory rate trended down; discharged home."
+  },
+  "simulation_flow": [
+    {
+      "phase": 1,
+      "name": "initial_presentation",
+      "release": [
+        "patient.Age",
+        "patient.Sex",
+        "simulation.opening.patient_line"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "history",
+      "release_on_request": [
+        "history"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "physical_examination",
+      "release_on_exam": [
+        "physical_exam"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "laboratory_investigations",
+      "release_on_order": [
+        "laboratory_investigations"
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "imaging",
+      "release_on_order": [
+        "imaging.xray.findings"
+      ]
+    },
+    {
+      "phase": 6,
+      "name": "learner_decision",
+      "collect": [
+        "working_diagnosis",
+        "severity_assessment",
+        "management_plan"
+      ]
+    },
+    {
+      "phase": 7,
+      "name": "debrief",
+      "reveal": [
+        "ground_truth"
+      ]
+    }
+  ],
+  "data_quality": {
+    "total_fields": 38,
+    "available_fields": 36,
+    "missing_fields_count": 2,
+    "missing_fields": [
+      "history.Fever",
+      "imaging.xray.findings.Result"
+    ]
+  }
+}

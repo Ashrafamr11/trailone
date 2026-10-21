@@ -1,0 +1,656 @@
+{
+  "case_id": "PED-RT-0002",
+  "rubric_version": "1.0",
+  "generated_at": "2026-10-17T22:47:35.154617+00:00",
+  "reference_book": {
+    "title": "Clinical Cases In Paediatrics",
+    "publication_year": 1997,
+    "source_format": "OCR-corrected JSON"
+  },
+  "status": "retrieved_pending_clinical_validation",
+  "warning": "Retrieved text is not verified medical guidance. This 1997 book contains OCR errors and potentially outdated recommendations. Retrieval scores are not student assessment scores.",
+  "domains": [
+    {
+      "domain_id": "communication",
+      "domain_name": "Communication Skills",
+      "max_score": 15,
+      "criteria": [
+        {
+          "criterion_id": "C01",
+          "description": "Introduces self and establishes rapport",
+          "max_score": 3,
+          "references": [],
+          "retrieval_status": "not_book_based",
+          "note": "Requires communication assessment framework"
+        },
+        {
+          "criterion_id": "C02",
+          "description": "Uses clear and understandable language",
+          "max_score": 3,
+          "references": [],
+          "retrieval_status": "not_book_based",
+          "note": "Requires communication assessment framework"
+        },
+        {
+          "criterion_id": "C03",
+          "description": "Demonstrates empathy toward the caregiver",
+          "max_score": 3,
+          "references": [],
+          "retrieval_status": "not_book_based",
+          "note": "Requires communication assessment framework"
+        },
+        {
+          "criterion_id": "C04",
+          "description": "Responds appropriately to caregiver concerns",
+          "max_score": 3,
+          "references": [],
+          "retrieval_status": "not_book_based",
+          "note": "Requires communication assessment framework"
+        },
+        {
+          "criterion_id": "C05",
+          "description": "Maintains a respectful and organized conversation",
+          "max_score": 3,
+          "references": [],
+          "retrieval_status": "not_book_based",
+          "note": "Requires communication assessment framework"
+        }
+      ]
+    },
+    {
+      "domain_id": "history",
+      "domain_name": "History Taking",
+      "max_score": 25,
+      "criteria": [
+        {
+          "criterion_id": "H01",
+          "description": "Explores onset and duration of cough and fever",
+          "max_score": 4,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.2693,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 13,
+              "similarity_score": 0.085,
+              "retrieved_text": "PNEUMONIA\nINTRODUCTION\n\n1. Bronchopneumonia: is commonest in the infants (<2 years). A wide variety of organisms can be responsible.\n- It commonly follows bronchitis, measles and whooping cough.\n- Onset may be sudden or gradual, and fever is variable. The specific features are rapid breathing and a dry cough.\n- Bilateral medium sized consonating crepitations and rhonchi or wheezes are present, and although chest X-ray shows small patches of consolidation, it is unusual to detect them clinically.\n- Cyanosis occurs in severe cases and infants may develop cardiac failure.\n\n2. Lobar pneumonia:\n- It occurs mainly in children 4-10 years old and presents with sudden illness and high fever. Pleuritic pain may be felt in the chest, causing the child to lean towards the affected side, or may be referred to the abdomen or neck.\n- The child is sick with an expiratory grunt and is using the alae nasi.\n- Inverted breathing may be evident (the pause comes after inspiration rather than expiration). There is usually no cough. Signs of consolidation are evident on affected lobe.\n- Lobar pneumonia is usually caused by the pneumococcus, and penicillin achieves dramatic improvement within 24 hours.\n\n3. Staphylococcal pneumonia:\n- A severe form of pneumonia which affects infants. It is characterized by lung cysts on X-ray and the sudden appearance of empyema or pyopneumothorax clinically.\n- Prolonged treatment with an antibiotic effective against staphylococci is required.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "pneumonia history taking onset duration fever cough when symptoms begin",
+          "topics": [
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "H02",
+          "description": "Explores cough characteristics and severity",
+          "max_score": 4,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 5,
+              "similarity_score": 0.2935,
+              "retrieved_text": ", Bro\nry MChigi Avy\n\n(Vimical Pediatrics\n\nClinical Evaluation of Bronchial Asthma\n\nJ, History Taking :\nComplaints :\n\n-  Anattack of c\nMention any other complaints.\n\nough, dyspnoea and wheezes (mention the duration),\n\nPresent History :\n1. When does the condition start?\n\n2. What was the first complaints to appear ?\n3. Type of onset (acute or gradual)?\n4, Analyze the symptoms -\ne.g. cough :\nSeverity, and frequency.\n- Does it increase by day or night.\n\n- [sit paroxysmal or not\n(paroxysmal = repeated coughs in a single expiration).\n\nDry or expectorant (usually difficult to detect in young ages).\n\nAny response to treatment given.\n\nDyspnoea, and Wheezes :\n- Severity (is he able to play and speak).\n\n2 More by day or night.\n- Increase by exercise.\n\nAsk if the condition is recurrent or this is the first attack.\nAge of onset of the recurrent attacks of cough, dyspnoea and wheezes.\n7. What precipitates the attacks.\n\ne.g. :\n- Viral infection.\n\n1",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.1193,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "history taking cough characteristics severity frequency dry productive day night",
+          "topics": [
+            "pneumonia",
+            "asthma"
+          ]
+        },
+        {
+          "criterion_id": "H03",
+          "description": "Explores fever and associated respiratory symptoms",
+          "max_score": 4,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.2985,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 13,
+              "similarity_score": 0.0778,
+              "retrieved_text": "PNEUMONIA\nINTRODUCTION\n\n1. Bronchopneumonia: is commonest in the infants (<2 years). A wide variety of organisms can be responsible.\n- It commonly follows bronchitis, measles and whooping cough.\n- Onset may be sudden or gradual, and fever is variable. The specific features are rapid breathing and a dry cough.\n- Bilateral medium sized consonating crepitations and rhonchi or wheezes are present, and although chest X-ray shows small patches of consolidation, it is unusual to detect them clinically.\n- Cyanosis occurs in severe cases and infants may develop cardiac failure.\n\n2. Lobar pneumonia:\n- It occurs mainly in children 4-10 years old and presents with sudden illness and high fever. Pleuritic pain may be felt in the chest, causing the child to lean towards the affected side, or may be referred to the abdomen or neck.\n- The child is sick with an expiratory grunt and is using the alae nasi.\n- Inverted breathing may be evident (the pause comes after inspiration rather than expiration). There is usually no cough. Signs of consolidation are evident on affected lobe.\n- Lobar pneumonia is usually caused by the pneumococcus, and penicillin achieves dramatic improvement within 24 hours.\n\n3. Staphylococcal pneumonia:\n- A severe form of pneumonia which affects infants. It is characterized by lung cysts on X-ray and the sudden appearance of empyema or pyopneumothorax clinically.\n- Prolonged treatment with an antibiotic effective against staphylococci is required.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "pneumonia fever cough tachypnoea dyspnoea wheezing noisy breathing associated symptoms",
+          "topics": [
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "H04",
+          "description": "Asks about asthma and previous respiratory admissions",
+          "max_score": 5,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 5,
+              "similarity_score": 0.1586,
+              "retrieved_text": ", Bro\nry MChigi Avy\n\n(Vimical Pediatrics\n\nClinical Evaluation of Bronchial Asthma\n\nJ, History Taking :\nComplaints :\n\n-  Anattack of c\nMention any other complaints.\n\nough, dyspnoea and wheezes (mention the duration),\n\nPresent History :\n1. When does the condition start?\n\n2. What was the first complaints to appear ?\n3. Type of onset (acute or gradual)?\n4, Analyze the symptoms -\ne.g. cough :\nSeverity, and frequency.\n- Does it increase by day or night.\n\n- [sit paroxysmal or not\n(paroxysmal = repeated coughs in a single expiration).\n\nDry or expectorant (usually difficult to detect in young ages).\n\nAny response to treatment given.\n\nDyspnoea, and Wheezes :\n- Severity (is he able to play and speak).\n\n2 More by day or night.\n- Increase by exercise.\n\nAsk if the condition is recurrent or this is the first attack.\nAge of onset of the recurrent attacks of cough, dyspnoea and wheezes.\n7. What precipitates the attacks.\n\ne.g. :\n- Viral infection.\n\n1",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.1367,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "bronchial asthma recurrent attacks previous respiratory illness admissions past history",
+          "topics": [
+            "asthma",
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "H05",
+          "description": "Explores medications used before admission and response",
+          "max_score": 4,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.1671,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 6,
+              "similarity_score": 0.1025,
+              "retrieved_text": "val Pediat TCs -3.\n\nfi Bronchial Asthma\n\n10.\n\nLy\n\nExercise.\n\n___ Allergens as house dust mites, animal dander or pollens. § k\npets at home (animals or birds), Environmental allergen a ‘i\nwheezing Occurs in certain season or certain place vievala\nin April and June).\n\n_ _ Parenteral cigarette smoking,\n\nEmotional upsets.\n\n(e.g. allergy to pollens .\n\n- Less commonly, alimentary allergens (as eggs, fish and chocolate)\n. Weather changes (coldness or humidity).\n\na Drugs as aspirin.\n\nThe severity of manifestations and the duration of each attack.\n\nHow do the attacks end, and the response to bronchodilators.\n\nAsk for the frequency of the attacks and whether they occur at a certain time of\n\nthe year or at any time (i.e. seasonal or not).\n\nAsk for other alleric manifestations in the child (as allergic eye or skin\n\nconditions as conjunctivitis and skin eczema).\n\nAsk for the condition of the child in between the attacks :\n\n‘ Can he play with other children.\n\n: How many days does he miss each school term because of asthma (in\nschool children).\n\n- _ Does he have a persistent dry cough at night or wheeze every morning.\n\nThis is helpful to detect the chronicity and severity of asthma to determine the\n\ntreatment needed in between attacks.\n\nWhat measures have been taken to reduce exposure to house dust, e.g. plastic\n\ncover of the mattress.\n\nAsk if he is given any treatment in between the attacks e.g. f, stimulant by\n\ninhaler and check if he, is utilizing the inhaler properly.\n\nFamily history of atopy or asthma, does anyone in the household smoke?.\n\nExclude other causes of wheezy chest as inhalation of foreign body or exposure\n\nto a tuberculous adult.",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "history previous medications drugs treatment response bronchodilators respiratory illness",
+          "topics": [
+            "asthma",
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "H06",
+          "description": "Asks relevant additional history including allergies and associated symptoms",
+          "max_score": 4,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.1295,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 6,
+              "similarity_score": 0.1265,
+              "retrieved_text": "val Pediat TCs -3.\n\nfi Bronchial Asthma\n\n10.\n\nLy\n\nExercise.\n\n___ Allergens as house dust mites, animal dander or pollens. § k\npets at home (animals or birds), Environmental allergen a ‘i\nwheezing Occurs in certain season or certain place vievala\nin April and June).\n\n_ _ Parenteral cigarette smoking,\n\nEmotional upsets.\n\n(e.g. allergy to pollens .\n\n- Less commonly, alimentary allergens (as eggs, fish and chocolate)\n. Weather changes (coldness or humidity).\n\na Drugs as aspirin.\n\nThe severity of manifestations and the duration of each attack.\n\nHow do the attacks end, and the response to bronchodilators.\n\nAsk for the frequency of the attacks and whether they occur at a certain time of\n\nthe year or at any time (i.e. seasonal or not).\n\nAsk for other alleric manifestations in the child (as allergic eye or skin\n\nconditions as conjunctivitis and skin eczema).\n\nAsk for the condition of the child in between the attacks :\n\n‘ Can he play with other children.\n\n: How many days does he miss each school term because of asthma (in\nschool children).\n\n- _ Does he have a persistent dry cough at night or wheeze every morning.\n\nThis is helpful to detect the chronicity and severity of asthma to determine the\n\ntreatment needed in between attacks.\n\nWhat measures have been taken to reduce exposure to house dust, e.g. plastic\n\ncover of the mattress.\n\nAsk if he is given any treatment in between the attacks e.g. f, stimulant by\n\ninhaler and check if he, is utilizing the inhaler properly.\n\nFamily history of atopy or asthma, does anyone in the household smoke?.\n\nExclude other causes of wheezy chest as inhalation of foreign body or exposure\n\nto a tuberculous adult.",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "history associated symptoms family history allergens exposure previous illness",
+          "topics": [
+            "asthma",
+            "pneumonia"
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "physical_examination",
+      "domain_name": "Physical Examination",
+      "max_score": 20,
+      "criteria": [
+        {
+          "criterion_id": "E01",
+          "description": "Assesses respiratory rate",
+          "max_score": 4,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 15,
+              "similarity_score": 0.1924,
+              "retrieved_text": "PNEUMONIA — Clinical Examination (continued)\n\nVital signs:\nPulse:\n- Tachycardia.\n- Rapid weak pulse (septic shock in septicemia).\nBlood pressure: Decreased in septic shock.\nTemperature: Increased (lower in viral than bacterial pneumonia).\nRespiratory rate:\n- Tachypnoea with shallow breathing.\n- Tachypnoea is considered when RR:\n  - In the first 2 months: >60 cycles/min.\n  - 2 months - 1 year: >50 cycles/min.\n  - >1 year: >40 cycles/min.\n\nAnthropometric measurements (weight, length and head circumference):\n- To exclude malnutrition especially in bronchopneumonia.\n\nHead and neck:\n- Pallor or cyanosis.\n- Acting alae nasi.\n- Inflammation of mucous membranes of the eyes, nose, mouth and throat more likely occur in viral pneumonias.\n\nExtremities:\n- Examination of extremities in addition to head, chest cage and anthropometric measurements help to exclude the presence of rickets and malnutrition.\n\nSkin:\n- Pyogenic skin infection may be the predisposing factor of staphylococcal pneumonia especially in infants <1 year.\n- Exclude the presence of skin rash of measles.\n\nLymph nodes: Generalized lymphadenopathy in T.B. (especially miliary T.B.).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 7,
+              "similarity_score": 0.1624,
+              "retrieved_text": "Bronchial\n\nOfinical Pediatrics = = Ast,\n\nes M 4 : e od\nClinical Examination: he\nCyd ares\n\nIl.\nGeneral look : (97 tag.\n- Distressed and dyspnoeic or not (in infants ——> unable to cry, in children ~\nble to speak).\nuna peak) wsy) in severe attacks. O, is the hey\n\nIrritable or disturbed consciousness (dro\nsedative for the hypoxic irritable child.\nCyanosed or not.\n\n; , LS :\n\nVital signs : OD 9%\n\n1.\n\nPulse :\n- Tachycardia in severe cases. a\nPulsus paradoxus : strength of pulse decreases with inspiration (systolic\n\nBP. decreases more than 10 mmHg during inspiration). It indicates sever,\n\ncase.\nBlood pressure : should be measured especially if the patient is maintained op\n\nsteroids.\nTemperature ===> as infections may precipitate the attack.\n\nRespiratory rate :\nWith increasing: severity of the attack, the respiratory rate increases and the\n\nrespiratory movements show limited inspiratory expansion and prolonged\n\nexpiration.,\n\nAnthropometric measurements :\n\nHeight and weight measurements and follow up are essential in detecting the\nchronicity and severity of asthma.\n\nIn chronic severe asthma ====> failure to grow.\n\nHeight can be used as a rough guide to predict the peak flow rate (see\ninvestigation).\n\nAverage peak flow rate (liters/min) = 5 x height in cm - 400.",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "respiratory rate tachypnoea breathing vital signs pneumonia asthma",
+          "topics": [
+            "pneumonia",
+            "asthma"
+          ]
+        },
+        {
+          "criterion_id": "E02",
+          "description": "Checks pulse and temperature",
+          "max_score": 3,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 15,
+              "similarity_score": 0.1915,
+              "retrieved_text": "PNEUMONIA — Clinical Examination (continued)\n\nVital signs:\nPulse:\n- Tachycardia.\n- Rapid weak pulse (septic shock in septicemia).\nBlood pressure: Decreased in septic shock.\nTemperature: Increased (lower in viral than bacterial pneumonia).\nRespiratory rate:\n- Tachypnoea with shallow breathing.\n- Tachypnoea is considered when RR:\n  - In the first 2 months: >60 cycles/min.\n  - 2 months - 1 year: >50 cycles/min.\n  - >1 year: >40 cycles/min.\n\nAnthropometric measurements (weight, length and head circumference):\n- To exclude malnutrition especially in bronchopneumonia.\n\nHead and neck:\n- Pallor or cyanosis.\n- Acting alae nasi.\n- Inflammation of mucous membranes of the eyes, nose, mouth and throat more likely occur in viral pneumonias.\n\nExtremities:\n- Examination of extremities in addition to head, chest cage and anthropometric measurements help to exclude the presence of rickets and malnutrition.\n\nSkin:\n- Pyogenic skin infection may be the predisposing factor of staphylococcal pneumonia especially in infants <1 year.\n- Exclude the presence of skin rash of measles.\n\nLymph nodes: Generalized lymphadenopathy in T.B. (especially miliary T.B.).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 7,
+              "similarity_score": 0.1528,
+              "retrieved_text": "Bronchial\n\nOfinical Pediatrics = = Ast,\n\nes M 4 : e od\nClinical Examination: he\nCyd ares\n\nIl.\nGeneral look : (97 tag.\n- Distressed and dyspnoeic or not (in infants ——> unable to cry, in children ~\nble to speak).\nuna peak) wsy) in severe attacks. O, is the hey\n\nIrritable or disturbed consciousness (dro\nsedative for the hypoxic irritable child.\nCyanosed or not.\n\n; , LS :\n\nVital signs : OD 9%\n\n1.\n\nPulse :\n- Tachycardia in severe cases. a\nPulsus paradoxus : strength of pulse decreases with inspiration (systolic\n\nBP. decreases more than 10 mmHg during inspiration). It indicates sever,\n\ncase.\nBlood pressure : should be measured especially if the patient is maintained op\n\nsteroids.\nTemperature ===> as infections may precipitate the attack.\n\nRespiratory rate :\nWith increasing: severity of the attack, the respiratory rate increases and the\n\nrespiratory movements show limited inspiratory expansion and prolonged\n\nexpiration.,\n\nAnthropometric measurements :\n\nHeight and weight measurements and follow up are essential in detecting the\nchronicity and severity of asthma.\n\nIn chronic severe asthma ====> failure to grow.\n\nHeight can be used as a rough guide to predict the peak flow rate (see\ninvestigation).\n\nAverage peak flow rate (liters/min) = 5 x height in cm - 400.",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "vital signs pulse temperature fever tachycardia clinical examination",
+          "topics": [
+            "pneumonia",
+            "asthma"
+          ]
+        },
+        {
+          "criterion_id": "E03",
+          "description": "Performs chest examination",
+          "max_score": 5,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 16,
+              "similarity_score": 0.2154,
+              "retrieved_text": "PNEUMONIA — CHEST EXAMINATION\nComparison in the source between lobar pneumonia (pneumococcus, H. influenza) and bronchopneumonia (Staph. aureus, Strept. pyogenes and Gram-negative bacteria or viruses):\n\nInspection — Shape:\n- Lobar pneumonia: No change.\n- Bronchopneumonia: Wasting due to PEM or deformities of rickets may be seen.\nInspection — Movements:\n- Lobar pneumonia: Limited on affected lobe.\n- Bronchopneumonia: Limited.\nInspection — IC retractions:\n- Lobar pneumonia: +ve.\n- Bronchopneumonia: +ve.\nPalpation — Mediastinum:\n- Lobar pneumonia: Central.\n- Bronchopneumonia: Central.\nPalpation — TVF:\n- Lobar pneumonia: Increased.\n- Bronchopneumonia: Normal or decreased or increased (variable in various areas).\nPalpation — Palpable rhonchi:\n- Lobar pneumonia: -ve.\n- Bronchopneumonia: May be +ve.\nPercussion:\n- Lobar pneumonia: Dull on affected lobe.\n- Bronchopneumonia: Variable.\nAuscultation — Air entry:\n- Lobar pneumonia: Decreased.\n- Bronchopneumonia: Decreased.\nAuscultation — Type of breathing:\n- Lobar pneumonia: Bronchial breathing on affected lobe.\n- Bronchopneumonia: Vesicular (or bronchial in confluent bronchopneumonia).\nAuscultation — Vocal resonance:\n- Lobar pneumonia: Increased with bronchophony.\n- Bronchopneumonia: Variable according to severity of consolidation in different areas (may be normal or decreased, sometimes decreased).\nAuscultation — Adventitious sounds:\n- Lobar pneumonia: Fine or medium size consonating crepitations in the early congestion stage or late stage of resolution.\n- Bronchopneumonia: Bilateral medium sized consonating crepitations and may be wheezes.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 9,
+              "similarity_score": 0.1225,
+              "retrieved_text": "Clinical Pediatrics -6- Bronchig, deg\nee\nMovements :\n\nWith increasing severity of the condition (acute attack) : tach\nlimited inspiration and prolonged expiration. Phy\n\nIntercostal retractions :\nAre seen and become more evident and in all intercostal Spaces ay\n\nas subcostal, suprasternal and supraclavicular so long as the Condi:\nbecomes worse. a\n\nSubcutaneous emphysema :\nIt is uncommonly seen in severe complicated attacks.\n\nPalpation :\n\nThe mediastinum is central (it may be shifted if the case is complicated },\npneumothorax or lung collapse).\n- TVF : decreases.\n\nPalpable rhonchi (rhonchus fremitus) ====> +ve.\n\nPercussion :\nWith hyperinflation, the percussion note becomes hyperresonance in all lines\n\n(mid clavicular, axillary lines, scapular and paravertebral lines) with encroachment o,\nthe cardiac and hepatic dullness.\n\nAuscultation :\nI. Air Entry : Decreases in proportionate to severity of the case.\n\n2. ‘Type of breathing : Vesicular breathing with prolonged expiration,\nof Vocal resonance : As TVF, decreased due to hyperinflation.\n4,\n\nAdventitious sounds :\nBilateral wheezes (mainly expiratory but may be inspiratory as well in\n\nsevere cases).\nMedium sized non consonating crepitations may be occasionally heard.\n\n5. D'espine sign ====> -ve.",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "chest examination auscultation air entry wheezes crepitations bronchopneumonia",
+          "topics": [
+            "pneumonia",
+            "asthma"
+          ]
+        },
+        {
+          "criterion_id": "E04",
+          "description": "Assesses general appearance and consciousness",
+          "max_score": 5,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 10,
+              "similarity_score": 0.1956,
+              "retrieved_text": "ofimical ed alk Bronchial Asthma\n\neart xamination :\n\nTo exclude heart lesions that may caus ;\nwheezy chest). € cardiac asthma (important cause of\n\n¢\n\nAbdomen *\n\nThe liver and spleen may be ptosed by the hyperinflated chest\n\n___ Exclude hepatosplenomegaly (present in miliary T.B., one of oon of wh\nchest). -\n\nExclude other masses which may suggest mali ;\n; gnancy associated\nmediastinal lymph nodes. ed with enlarged\n\n‘It is essential to evaluate the severity of the acute attack\nAn acute mild asthma :\nMild respiratory distress.\n\nMain findings are prolonged expiration and expiratory wheezes.\n-  Anacute moderate asthma :\n\nModerate respiratory distress wit tachypnoea and retractions + prolonged\nexpiration and expiratory wheezes.\n\n: In acute severe asthma :\nSevere respiratory distress with tachypnoea, retractions.\nCyanosis or disturbed consciousness may be present.\nMarkedly diminished air entry, wheezing may be decreased or absent due\nto markedly reduced air entry. Wheezing becomes more apparent after\nintake of bronchodilators.\n\nIf the acute severe attack is not responding to the proper conventional therapy\nwith bronchodilatation ====> status asthmaticus.",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.173,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "general look respiratory distress cyanosis consciousness severe asthma pneumonia",
+          "topics": [
+            "asthma",
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "E05",
+          "description": "Performs relevant cardiovascular examination",
+          "max_score": 3,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 10,
+              "similarity_score": 0.1103,
+              "retrieved_text": "ofimical ed alk Bronchial Asthma\n\neart xamination :\n\nTo exclude heart lesions that may caus ;\nwheezy chest). € cardiac asthma (important cause of\n\n¢\n\nAbdomen *\n\nThe liver and spleen may be ptosed by the hyperinflated chest\n\n___ Exclude hepatosplenomegaly (present in miliary T.B., one of oon of wh\nchest). -\n\nExclude other masses which may suggest mali ;\n; gnancy associated\nmediastinal lymph nodes. ed with enlarged\n\n‘It is essential to evaluate the severity of the acute attack\nAn acute mild asthma :\nMild respiratory distress.\n\nMain findings are prolonged expiration and expiratory wheezes.\n-  Anacute moderate asthma :\n\nModerate respiratory distress wit tachypnoea and retractions + prolonged\nexpiration and expiratory wheezes.\n\n: In acute severe asthma :\nSevere respiratory distress with tachypnoea, retractions.\nCyanosis or disturbed consciousness may be present.\nMarkedly diminished air entry, wheezing may be decreased or absent due\nto markedly reduced air entry. Wheezing becomes more apparent after\nintake of bronchodilators.\n\nIf the acute severe attack is not responding to the proper conventional therapy\nwith bronchodilatation ====> status asthmaticus.",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 17,
+              "similarity_score": 0.1071,
+              "retrieved_text": "PNEUMONIA — Clinical Examination (continued)\n\nIn every case of pneumonia, a complicating synpneumonic empyema should be excluded. In this case local signs may show:\n- Inspection: bulging of the affected side with fullness of intercostal spaces and limited mobility.\n- Palpation: decreased TVF on the side of empyema and shifted mediastinum to the opposite side (if the empyema is massive).\n- Percussion: Stony dullness on the affected side.\n- Auscultation: Distant bronchial breathing. Decreased vocal resonance.\n\nHeart:\n- Septic pericarditis and pericardial effusion is an important complication of pneumonia and empyema.\n\nAbdomen:\n- For organomegaly or abdominal masses (pneumonia may be seen in a case of leukemia).\n\nCNS:\n- Exclude meningitis.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "heart examination cardiac complications pneumonia wheezy chest",
+          "topics": [
+            "pneumonia",
+            "asthma"
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "investigations",
+      "domain_name": "Investigations",
+      "max_score": 15,
+      "criteria": [
+        {
+          "criterion_id": "I01",
+          "description": "Reviews chest X-ray when clinically justified",
+          "max_score": 5,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 18,
+              "similarity_score": 0.2126,
+              "retrieved_text": "PNEUMONIA — INVESTIGATIONS\n\nIII. Investigations:\n1. Chest X-ray:\n   - Lobar pneumonia: Homogenous opacity in affected lobe.\n   - Bronchopneumonia: Scattered patches of white opacities in both lungs.\n   - Complicated cases — Empyema: white homogenous opacity with concave upper border and obliteration of costo-phrenic angle in the affected side.\n2. Complete blood picture: Leucocytosis occurs more in bacterial pneumonia.\n3. Isolation of organism from:\n   - Secretions obtained from deep coughing.\n   - Pleural fluid.\n   - Lung aspiration (but invasive).\n   - Blood culture.\n4. Detection of bacterial antigen in: Blood, urine or pleural fluid by immuno-electrophoresis.\n\nDIAGNOSIS:\n1. A case of right (or left) upper (or lower) lobar pneumonia, not complicated.\n2. A case of bronchopneumonia, not complicated.\n3. If the case is complicated by empyema: Right (or left) sided synpneumonic empyema.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 13,
+              "similarity_score": 0.0871,
+              "retrieved_text": "PNEUMONIA\nINTRODUCTION\n\n1. Bronchopneumonia: is commonest in the infants (<2 years). A wide variety of organisms can be responsible.\n- It commonly follows bronchitis, measles and whooping cough.\n- Onset may be sudden or gradual, and fever is variable. The specific features are rapid breathing and a dry cough.\n- Bilateral medium sized consonating crepitations and rhonchi or wheezes are present, and although chest X-ray shows small patches of consolidation, it is unusual to detect them clinically.\n- Cyanosis occurs in severe cases and infants may develop cardiac failure.\n\n2. Lobar pneumonia:\n- It occurs mainly in children 4-10 years old and presents with sudden illness and high fever. Pleuritic pain may be felt in the chest, causing the child to lean towards the affected side, or may be referred to the abdomen or neck.\n- The child is sick with an expiratory grunt and is using the alae nasi.\n- Inverted breathing may be evident (the pause comes after inspiration rather than expiration). There is usually no cough. Signs of consolidation are evident on affected lobe.\n- Lobar pneumonia is usually caused by the pneumococcus, and penicillin achieves dramatic improvement within 24 hours.\n\n3. Staphylococcal pneumonia:\n- A severe form of pneumonia which affects infants. It is characterized by lung cysts on X-ray and the sudden appearance of empyema or pyopneumothorax clinically.\n- Prolonged treatment with an antibiotic effective against staphylococci is required.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "chest X-ray bronchopneumonia scattered patches opacities bilateral lungs",
+          "topics": [
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "I02",
+          "description": "Evaluates oxygenation using the available blood gas data when indicated",
+          "max_score": 5,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 12,
+              "similarity_score": 0.4098,
+              "retrieved_text": "BRONCHIAL ASTHMA — Investigations (continued)\n6. Blood gases in severe attacks:\n   i. pH low: metabolic acidosis from hypoxia.\n   ii. PCO2: low; if it rises >40 mmHg => respiratory failure.\n   iii. PO2: low.\n\nDIAGNOSIS\nA case of bronchial asthma in acute attack (or in status asthmaticus).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 7,
+              "similarity_score": 0.0787,
+              "retrieved_text": "Bronchial\n\nOfinical Pediatrics = = Ast,\n\nes M 4 : e od\nClinical Examination: he\nCyd ares\n\nIl.\nGeneral look : (97 tag.\n- Distressed and dyspnoeic or not (in infants ——> unable to cry, in children ~\nble to speak).\nuna peak) wsy) in severe attacks. O, is the hey\n\nIrritable or disturbed consciousness (dro\nsedative for the hypoxic irritable child.\nCyanosed or not.\n\n; , LS :\n\nVital signs : OD 9%\n\n1.\n\nPulse :\n- Tachycardia in severe cases. a\nPulsus paradoxus : strength of pulse decreases with inspiration (systolic\n\nBP. decreases more than 10 mmHg during inspiration). It indicates sever,\n\ncase.\nBlood pressure : should be measured especially if the patient is maintained op\n\nsteroids.\nTemperature ===> as infections may precipitate the attack.\n\nRespiratory rate :\nWith increasing: severity of the attack, the respiratory rate increases and the\n\nrespiratory movements show limited inspiratory expansion and prolonged\n\nexpiration.,\n\nAnthropometric measurements :\n\nHeight and weight measurements and follow up are essential in detecting the\nchronicity and severity of asthma.\n\nIn chronic severe asthma ====> failure to grow.\n\nHeight can be used as a rough guide to predict the peak flow rate (see\ninvestigation).\n\nAverage peak flow rate (liters/min) = 5 x height in cm - 400.",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "blood gases severe asthma PO2 PCO2 hypoxia respiratory failure",
+          "topics": [
+            "asthma"
+          ]
+        },
+        {
+          "criterion_id": "I03",
+          "description": "Selects relevant infection or inflammation investigations when justified",
+          "max_score": 3,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 18,
+              "similarity_score": 0.2463,
+              "retrieved_text": "PNEUMONIA — INVESTIGATIONS\n\nIII. Investigations:\n1. Chest X-ray:\n   - Lobar pneumonia: Homogenous opacity in affected lobe.\n   - Bronchopneumonia: Scattered patches of white opacities in both lungs.\n   - Complicated cases — Empyema: white homogenous opacity with concave upper border and obliteration of costo-phrenic angle in the affected side.\n2. Complete blood picture: Leucocytosis occurs more in bacterial pneumonia.\n3. Isolation of organism from:\n   - Secretions obtained from deep coughing.\n   - Pleural fluid.\n   - Lung aspiration (but invasive).\n   - Blood culture.\n4. Detection of bacterial antigen in: Blood, urine or pleural fluid by immuno-electrophoresis.\n\nDIAGNOSIS:\n1. A case of right (or left) upper (or lower) lobar pneumonia, not complicated.\n2. A case of bronchopneumonia, not complicated.\n3. If the case is complicated by empyema: Right (or left) sided synpneumonic empyema.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 15,
+              "similarity_score": 0.0436,
+              "retrieved_text": "PNEUMONIA — Clinical Examination (continued)\n\nVital signs:\nPulse:\n- Tachycardia.\n- Rapid weak pulse (septic shock in septicemia).\nBlood pressure: Decreased in septic shock.\nTemperature: Increased (lower in viral than bacterial pneumonia).\nRespiratory rate:\n- Tachypnoea with shallow breathing.\n- Tachypnoea is considered when RR:\n  - In the first 2 months: >60 cycles/min.\n  - 2 months - 1 year: >50 cycles/min.\n  - >1 year: >40 cycles/min.\n\nAnthropometric measurements (weight, length and head circumference):\n- To exclude malnutrition especially in bronchopneumonia.\n\nHead and neck:\n- Pallor or cyanosis.\n- Acting alae nasi.\n- Inflammation of mucous membranes of the eyes, nose, mouth and throat more likely occur in viral pneumonias.\n\nExtremities:\n- Examination of extremities in addition to head, chest cage and anthropometric measurements help to exclude the presence of rickets and malnutrition.\n\nSkin:\n- Pyogenic skin infection may be the predisposing factor of staphylococcal pneumonia especially in infants <1 year.\n- Exclude the presence of skin rash of measles.\n\nLymph nodes: Generalized lymphadenopathy in T.B. (especially miliary T.B.).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "pneumonia investigations complete blood picture leukocytosis infection",
+          "topics": [
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "I04",
+          "description": "Demonstrates appropriate and non-excessive investigation selection",
+          "max_score": 2,
+          "references": [],
+          "retrieval_status": "not_book_based",
+          "note": "Requires clinical appropriateness criteria; the textbook alone does not define over-testing"
+        }
+      ]
+    },
+    {
+      "domain_id": "clinical_reasoning",
+      "domain_name": "Clinical Reasoning & Diagnosis",
+      "max_score": 25,
+      "criteria": [
+        {
+          "criterion_id": "D01",
+          "description": "Connects clinical history with examination findings",
+          "max_score": 6,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.2316,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 13,
+              "similarity_score": 0.1127,
+              "retrieved_text": "PNEUMONIA\nINTRODUCTION\n\n1. Bronchopneumonia: is commonest in the infants (<2 years). A wide variety of organisms can be responsible.\n- It commonly follows bronchitis, measles and whooping cough.\n- Onset may be sudden or gradual, and fever is variable. The specific features are rapid breathing and a dry cough.\n- Bilateral medium sized consonating crepitations and rhonchi or wheezes are present, and although chest X-ray shows small patches of consolidation, it is unusual to detect them clinically.\n- Cyanosis occurs in severe cases and infants may develop cardiac failure.\n\n2. Lobar pneumonia:\n- It occurs mainly in children 4-10 years old and presents with sudden illness and high fever. Pleuritic pain may be felt in the chest, causing the child to lean towards the affected side, or may be referred to the abdomen or neck.\n- The child is sick with an expiratory grunt and is using the alae nasi.\n- Inverted breathing may be evident (the pause comes after inspiration rather than expiration). There is usually no cough. Signs of consolidation are evident on affected lobe.\n- Lobar pneumonia is usually caused by the pneumococcus, and penicillin achieves dramatic improvement within 24 hours.\n\n3. Staphylococcal pneumonia:\n- A severe form of pneumonia which affects infants. It is characterized by lung cysts on X-ray and the sudden appearance of empyema or pyopneumothorax clinically.\n- Prolonged treatment with an antibiotic effective against staphylococci is required.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "pneumonia clinical features history examination cough fever crepitations",
+          "topics": [
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "D02",
+          "description": "Considers plausible differential diagnoses",
+          "max_score": 5,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 12,
+              "similarity_score": 0.1745,
+              "retrieved_text": "BRONCHIAL ASTHMA — Investigations (continued)\n6. Blood gases in severe attacks:\n   i. pH low: metabolic acidosis from hypoxia.\n   ii. PCO2: low; if it rises >40 mmHg => respiratory failure.\n   iii. PO2: low.\n\nDIAGNOSIS\nA case of bronchial asthma in acute attack (or in status asthmaticus).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 16,
+              "similarity_score": 0.1185,
+              "retrieved_text": "PNEUMONIA — CHEST EXAMINATION\nComparison in the source between lobar pneumonia (pneumococcus, H. influenza) and bronchopneumonia (Staph. aureus, Strept. pyogenes and Gram-negative bacteria or viruses):\n\nInspection — Shape:\n- Lobar pneumonia: No change.\n- Bronchopneumonia: Wasting due to PEM or deformities of rickets may be seen.\nInspection — Movements:\n- Lobar pneumonia: Limited on affected lobe.\n- Bronchopneumonia: Limited.\nInspection — IC retractions:\n- Lobar pneumonia: +ve.\n- Bronchopneumonia: +ve.\nPalpation — Mediastinum:\n- Lobar pneumonia: Central.\n- Bronchopneumonia: Central.\nPalpation — TVF:\n- Lobar pneumonia: Increased.\n- Bronchopneumonia: Normal or decreased or increased (variable in various areas).\nPalpation — Palpable rhonchi:\n- Lobar pneumonia: -ve.\n- Bronchopneumonia: May be +ve.\nPercussion:\n- Lobar pneumonia: Dull on affected lobe.\n- Bronchopneumonia: Variable.\nAuscultation — Air entry:\n- Lobar pneumonia: Decreased.\n- Bronchopneumonia: Decreased.\nAuscultation — Type of breathing:\n- Lobar pneumonia: Bronchial breathing on affected lobe.\n- Bronchopneumonia: Vesicular (or bronchial in confluent bronchopneumonia).\nAuscultation — Vocal resonance:\n- Lobar pneumonia: Increased with bronchophony.\n- Bronchopneumonia: Variable according to severity of consolidation in different areas (may be normal or decreased, sometimes decreased).\nAuscultation — Adventitious sounds:\n- Lobar pneumonia: Fine or medium size consonating crepitations in the early congestion stage or late stage of resolution.\n- Bronchopneumonia: Bilateral medium sized consonating crepitations and may be wheezes.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "bronchopneumonia bronchial asthma wheezes crepitations differential diagnosis",
+          "topics": [
+            "pneumonia",
+            "asthma"
+          ]
+        },
+        {
+          "criterion_id": "D03",
+          "description": "Recognizes the possible relationship between asthma and respiratory infection",
+          "max_score": 5,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 5,
+              "similarity_score": 0.1207,
+              "retrieved_text": ", Bro\nry MChigi Avy\n\n(Vimical Pediatrics\n\nClinical Evaluation of Bronchial Asthma\n\nJ, History Taking :\nComplaints :\n\n-  Anattack of c\nMention any other complaints.\n\nough, dyspnoea and wheezes (mention the duration),\n\nPresent History :\n1. When does the condition start?\n\n2. What was the first complaints to appear ?\n3. Type of onset (acute or gradual)?\n4, Analyze the symptoms -\ne.g. cough :\nSeverity, and frequency.\n- Does it increase by day or night.\n\n- [sit paroxysmal or not\n(paroxysmal = repeated coughs in a single expiration).\n\nDry or expectorant (usually difficult to detect in young ages).\n\nAny response to treatment given.\n\nDyspnoea, and Wheezes :\n- Severity (is he able to play and speak).\n\n2 More by day or night.\n- Increase by exercise.\n\nAsk if the condition is recurrent or this is the first attack.\nAge of onset of the recurrent attacks of cough, dyspnoea and wheezes.\n7. What precipitates the attacks.\n\ne.g. :\n- Viral infection.\n\n1",
+              "requires_ocr_review": true,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 15,
+              "similarity_score": 0.1074,
+              "retrieved_text": "PNEUMONIA — Clinical Examination (continued)\n\nVital signs:\nPulse:\n- Tachycardia.\n- Rapid weak pulse (septic shock in septicemia).\nBlood pressure: Decreased in septic shock.\nTemperature: Increased (lower in viral than bacterial pneumonia).\nRespiratory rate:\n- Tachypnoea with shallow breathing.\n- Tachypnoea is considered when RR:\n  - In the first 2 months: >60 cycles/min.\n  - 2 months - 1 year: >50 cycles/min.\n  - >1 year: >40 cycles/min.\n\nAnthropometric measurements (weight, length and head circumference):\n- To exclude malnutrition especially in bronchopneumonia.\n\nHead and neck:\n- Pallor or cyanosis.\n- Acting alae nasi.\n- Inflammation of mucous membranes of the eyes, nose, mouth and throat more likely occur in viral pneumonias.\n\nExtremities:\n- Examination of extremities in addition to head, chest cage and anthropometric measurements help to exclude the presence of rickets and malnutrition.\n\nSkin:\n- Pyogenic skin infection may be the predisposing factor of staphylococcal pneumonia especially in infants <1 year.\n- Exclude the presence of skin rash of measles.\n\nLymph nodes: Generalized lymphadenopathy in T.B. (especially miliary T.B.).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "bronchial asthma viral infection trigger wheezes pneumonia respiratory infection",
+          "topics": [
+            "asthma",
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "D04",
+          "description": "Selects a clinically supported final diagnosis",
+          "max_score": 5,
+          "references": [
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 18,
+              "similarity_score": 0.1823,
+              "retrieved_text": "PNEUMONIA — INVESTIGATIONS\n\nIII. Investigations:\n1. Chest X-ray:\n   - Lobar pneumonia: Homogenous opacity in affected lobe.\n   - Bronchopneumonia: Scattered patches of white opacities in both lungs.\n   - Complicated cases — Empyema: white homogenous opacity with concave upper border and obliteration of costo-phrenic angle in the affected side.\n2. Complete blood picture: Leucocytosis occurs more in bacterial pneumonia.\n3. Isolation of organism from:\n   - Secretions obtained from deep coughing.\n   - Pleural fluid.\n   - Lung aspiration (but invasive).\n   - Blood culture.\n4. Detection of bacterial antigen in: Blood, urine or pleural fluid by immuno-electrophoresis.\n\nDIAGNOSIS:\n1. A case of right (or left) upper (or lower) lobar pneumonia, not complicated.\n2. A case of bronchopneumonia, not complicated.\n3. If the case is complicated by empyema: Right (or left) sided synpneumonic empyema.",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            },
+            {
+              "source": "Clinical Cases In Paediatrics",
+              "publication_year": 1997,
+              "pdf_page": 14,
+              "similarity_score": 0.0688,
+              "retrieved_text": "CLINICAL EVALUATION OF PNEUMONIA\n\nI. HISTORY TAKING\nThe clinical features of pneumonia often include a prodrome of sore throat and coryza followed by fever, cough, tachypnoea and abdominal or chest pain.\nAsk for:\n- Age of the patient.\n- The symptoms (fever, cough, tachypnoea, abdominal or chest pain), when did they begin?\n- The presence and characteristics of cough.\n- The presence of noisy breathing (grunting, or wheezes), dyspnoea (unable to feed, cry or do any effort), and cyanosis.\n- History of preceding diseases as measles, gastroenteritis, rickets, malnutrition, or skin infection.\n- History of contact with anyone having respiratory illness (mainly in family members especially tuberculosis).\n- History of similar condition in the past, and the treatment given and the response to treatment.\n- History of foreign body aspiration.\n- Any drugs given for the present condition.\n- Vaccination and nutritional history are important to assess the immune status.\n\nII. CLINICAL EXAMINATION\nGeneral look:\n- Pale and toxic.\n- Respiratory distress (acting alae nasi, expiratory grunting and inverted breathing in addition to the tachypnoea with shallow breathing).\n- Dyspnoea and cyanosis in severe cases.\n- The infant may look malnourished (especially in bronchopneumonia).",
+              "requires_ocr_review": false,
+              "clinical_validation": "pending"
+            }
+          ],
+          "retrieval_status": "retrieved",
+          "search_query": "bronchopneumonia diagnosis clinical examination investigations chest X-ray",
+          "topics": [
+            "pneumonia"
+          ]
+        },
+        {
+          "criterion_id": "D05",
+          "description": "Justifies the diagnosis using supporting and conflicting evidence",
+          "max_score": 4,
+          "references": [],
+          "retrieval_status": "not_book_based",
+          "note": "Requires assessment of the student's justification against case evidence and validated clinical criteria"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "schema_version": "3.0",
+
+  "case_id": "OPD_PEDS_INFANT_VOMITING_DIARRHEA2_001",
+
+  "presentation": {
+    "title": "Infant with Vomiting and Diarrhea",
+    "subtitle": "Pediatric Outpatient Case",
+    "short_brief": "A 9-month-old female infant is brought by her mother because of forceful vomiting and diarrhea.",
+    "difficulty": "Beginner",
+    "specialty": "Pediatrics",
+    "setting": "Outpatient Clinic",
+    "estimated_duration_minutes": 15,
+    "thumbnail": "OPD_PEDS_INFANT_VOMITING_DIARRHEA2_001/cover.jpg"
+  },
+
+  "source": {
+    "dataset": "Scanned hospital chart, restructured for simulation",
+    "data_fidelity": "Medical values are copied from the source chart where clearly available. null means the value was not reliably provided for that specific simulation field.",
+    "adaptation_notes": [
+      "Original source was an inpatient hospital chart and was adapted into a learner-facing pediatric simulation.",
+      "Patient-identifying information was removed or replaced. The patient name used in the simulation is fictional.",
+      "Respiratory rate was documented with more than one value in the chart. The physical examination value of 40 breaths/minute is used for the initial examination.",
+      "Sodium was documented with more than one value. The chemistry value of 139 is used in this simulation.",
+      "history.Fever refers specifically to fever known by the mother before the simulated visit and remains null because it is not reliably established in the pre-visit history.",
+      "physical_exam.Body_Temperature is a separate measured examination value and is 37.0 degrees Celsius.",
+      "The X-ray image is available from the source chart, but a reliable written radiology result is not available, so imaging.xray.report_result is null.",
+      "Medication names transcribed from handwritten source material should be clinically reviewed before production deployment.",
+      "Hospital treatment and hospital outcome are hidden from the learner until debrief."
+    ]
+  },
+
+  "simulation": {
+    "type": "pediatric_clinical_simulation",
+    "setting": "pediatric outpatient clinic",
+
+    "respondent": {
+      "role": "mother",
+      "relationship_to_patient": "mother",
+      "speaks_for_patient": true,
+      "reason": "The patient is a 9-month-old infant and cannot answer clinical history questions herself."
+    },
+
+    "opening": {
+      "patient_line": "Doctor, my baby keeps vomiting forcefully, and now she has diarrhea too.",
+      "source_verbatim": false,
+      "derived_from": {
+        "chief_complaint": "projectile vomiting",
+        "present_history": "diarrhea"
+      }
+    },
+
+    "chat_policy": {
+      "purpose": "history_taking_and_patient_conversation_only",
+
+      "allowed_sections": [
+        "patient",
+        "history",
+        "simulation.respondent",
+        "simulation.opening"
+      ],
+
+      "forbidden_sections": [
+        "physical_exam",
+        "laboratory_investigations",
+        "imaging",
+        "ground_truth"
+      ],
+
+      "physical_exam_instruction": "If the learner asks the mother to provide a physical examination finding or says they want to perform an examination, do not reveal the finding in chat. Tell the learner to use the Physical Examination section.",
+
+      "laboratory_instruction": "If the learner asks to see, retrieve, interpret, or list laboratory results in chat, do not provide the values. Tell the learner to use the Investigations section.",
+
+      "imaging_instruction": "If the learner asks to see or retrieve imaging in chat, do not provide the image or findings. Tell the learner to use the Imaging section.",
+
+      "diagnosis_instruction": "The mother must never provide or confirm the final diagnosis during the active session.",
+
+      "management_instruction": "Do not reveal hospital management or treatment course during the active session.",
+
+      "outcome_instruction": "Do not reveal the hospital outcome during the active session.",
+
+      "interpretation_instruction": "The mother must not interpret laboratory values, imaging, physical examination findings, or give medical conclusions.",
+
+      "general_knowledge_instruction": "Do not answer unrelated general-knowledge questions using model knowledge. Stay in character and redirect naturally to the clinical encounter.",
+
+      "missing_information_instruction": "If the requested history information is not present, the mother should naturally say she does not know, does not remember, or is not sure. Do not redirect missing history questions to physical examination unless examination is genuinely required to answer them.",
+
+      "response_style": "Natural, short, conversational, and consistent with a worried mother speaking to a doctor."
+    },
+
+    "patient_actor_rules": [
+      "Always speak as the mother, never as the infant.",
+      "The mother knows she is the patient's mother and may state this directly.",
+      "Use only patient, history, respondent, and opening information for medical conversation.",
+      "Do not invent symptoms, duration, chronology, exposures, measurements, medications, or history.",
+      "Do not reveal physical examination findings through chat.",
+      "Do not reveal laboratory values through chat.",
+      "Do not reveal imaging findings through chat.",
+      "Do not reveal diagnosis, severity, management, or outcome during the active session.",
+      "Do not interpret medical results.",
+      "Do not answer unrelated factual or general-knowledge questions from model knowledge.",
+      "If information is absent, answer naturally that the mother does not know or does not remember."
+    ]
+  },
+
+  "patient": {
+    "Name": "Hana Mahmoud Saber",
+    "Age": "9 months",
+    "Sex": "female",
+    "Weight": 8,
+    "Social_Status": "lives with family"
+  },
+
+  "history": {
+    "Vomiting": "projectile (forceful)",
+    "Diarrhea": "yes",
+    "Fever": null,
+    "Systems_Review": "no other complaints",
+    "Previous_Medications": {
+      "context": "before the simulated visit / before admission",
+      "items": [
+        {
+          "name": "Danstasol syrup",
+          "amount_documented": "8 small spoons"
+        },
+        {
+          "name": "Iswid Daman syrup",
+          "amount_documented": "8 small spoons"
+        },
+        {
+          "name": "ORS solution",
+          "amount_documented": null
+        }
+      ],
+      "transcription_review_required": true
+    },
+    "Allergy": "no",
+    "Adverse_Drug_Reaction": "no"
+  },
+
+  "physical_exam": {
+    "Body_Temperature": {
+      "value": 37.0,
+      "unit": "°C"
+    },
+    "Pulse": {
+      "value": 110,
+      "unit": "beats/min"
+    },
+    "Respiratory_Rate": {
+      "value": 40,
+      "unit": "breaths/min"
+    },
+    "General_Appearance": "normal",
+    "Chest": "normal, clear",
+    "Heart": "normal, S1 S2 heard",
+    "Abdomen": "normal, soft",
+    "Neurological": "normal",
+    "Skin_Rash": "yes"
+  },
+
+  "physical_exam_ui": {
+    "title": "Physical Examination",
+    "instruction": "Select an examination item to reveal its documented finding.",
+    "items": [
+      {
+        "id": "temperature",
+        "label": "Body Temperature",
+        "path": "physical_exam.Body_Temperature"
+      },
+      {
+        "id": "pulse",
+        "label": "Pulse",
+        "path": "physical_exam.Pulse"
+      },
+      {
+        "id": "respiratory_rate",
+        "label": "Respiratory Rate",
+        "path": "physical_exam.Respiratory_Rate"
+      },
+      {
+        "id": "general_appearance",
+        "label": "General Appearance",
+        "path": "physical_exam.General_Appearance"
+      },
+      {
+        "id": "chest",
+        "label": "Chest Examination",
+        "path": "physical_exam.Chest"
+      },
+      {
+        "id": "heart",
+        "label": "Cardiovascular Examination",
+        "path": "physical_exam.Heart"
+      },
+      {
+        "id": "abdomen",
+        "label": "Abdominal Examination",
+        "path": "physical_exam.Abdomen"
+      },
+      {
+        "id": "neurological",
+        "label": "Neurological Examination",
+        "path": "physical_exam.Neurological"
+      },
+      {
+        "id": "skin",
+        "label": "Skin Examination",
+        "path": "physical_exam.Skin_Rash"
+      }
+    ]
+  },
+
+  "laboratory_investigations": {
+    "WBC_Count": 4.6,
+    "Lymphocyte_Percent": 40.8,
+    "RBC_Count": 3.94,
+    "Hemoglobin": 8.8,
+    "Hematocrit": 26.7,
+    "MCV": 67.8,
+    "MCH": 22.3,
+    "MCHC": 32.9,
+    "Platelet_Count": 276,
+    "Sodium": 139,
+    "Potassium": 3.0,
+    "Creatinine": 0.3,
+    "Urea": 22,
+    "CRP": "negative"
+  },
+
+  "investigations_ui": {
+    "title": "Investigations",
+    "instruction": "Select the investigations you want to review, then continue to view the documented results.",
+
+    "groups": [
+      {
+        "id": "cbc",
+        "label": "Complete Blood Count",
+        "items": [
+          {
+            "label": "WBC Count",
+            "path": "laboratory_investigations.WBC_Count"
+          },
+          {
+            "label": "Lymphocyte %",
+            "path": "laboratory_investigations.Lymphocyte_Percent"
+          },
+          {
+            "label": "RBC Count",
+            "path": "laboratory_investigations.RBC_Count"
+          },
+          {
+            "label": "Hemoglobin",
+            "path": "laboratory_investigations.Hemoglobin"
+          },
+          {
+            "label": "Hematocrit",
+            "path": "laboratory_investigations.Hematocrit"
+          },
+          {
+            "label": "MCV",
+            "path": "laboratory_investigations.MCV"
+          },
+          {
+            "label": "MCH",
+            "path": "laboratory_investigations.MCH"
+          },
+          {
+            "label": "MCHC",
+            "path": "laboratory_investigations.MCHC"
+          },
+          {
+            "label": "Platelet Count",
+            "path": "laboratory_investigations.Platelet_Count"
+          }
+        ]
+      },
+
+      {
+        "id": "electrolytes",
+        "label": "Electrolytes",
+        "items": [
+          {
+            "label": "Sodium",
+            "path": "laboratory_investigations.Sodium"
+          },
+          {
+            "label": "Potassium",
+            "path": "laboratory_investigations.Potassium"
+          }
+        ]
+      },
+
+      {
+        "id": "renal_function",
+        "label": "Renal Function",
+        "items": [
+          {
+            "label": "Creatinine",
+            "path": "laboratory_investigations.Creatinine"
+          },
+          {
+            "label": "Urea",
+            "path": "laboratory_investigations.Urea"
+          }
+        ]
+      },
+
+      {
+        "id": "inflammatory_markers",
+        "label": "Inflammatory Markers",
+        "items": [
+          {
+            "label": "CRP",
+            "path": "laboratory_investigations.CRP"
+          }
+        ]
+      }
+    ]
+  },
+
+  "imaging": {
+    "xray": {
+      "available": true,
+      "study_name": "Chest and Abdomen X-ray",
+      "body_part": "chest and abdomen",
+      "image_asset": "OPD_PEDS_INFANT_VOMITING_DIARRHEA2_001/xray.jpg",
+      "report_result": null,
+      "report_status": "not_available"
+    }
+  },
+
+  "imaging_ui": {
+    "title": "Imaging",
+    "instruction": "Select an available imaging study to review it.",
+    "studies": [
+      {
+        "id": "xray_chest_abdomen",
+        "label": "Chest and Abdomen X-ray",
+        "type": "xray",
+        "image_path": "imaging.xray.image_asset",
+        "report_path": "imaging.xray.report_result"
+      }
+    ],
+    "missing_report_text": "A written radiology report is not available for this study."
+  },
+
+  "learner_assessment": {
+    "enabled": true,
+    "trigger": "end_session",
+
+    "end_session_button": {
+      "label": "End Session",
+      "confirmation_title": "End this clinical encounter?",
+      "confirmation_message": "Once you end the session, history taking will stop and you will be asked to submit your final diagnosis."
+    },
+
+    "final_diagnosis": {
+      "title": "What is your final diagnosis?",
+      "instruction": "Select the diagnosis that best explains the case.",
+      "type": "single_choice",
+      "allow_free_text": false,
+
+      "options": [
+        {
+          "id": "acute_gastroenteritis",
+          "label": "Acute Gastroenteritis"
+        },
+        {
+          "id": "hypertrophic_pyloric_stenosis",
+          "label": "Hypertrophic Pyloric Stenosis"
+        },
+        {
+          "id": "intestinal_obstruction",
+          "label": "Intestinal Obstruction"
+        },
+        {
+          "id": "urinary_tract_infection",
+          "label": "Urinary Tract Infection"
+        }
+      ]
+    },
+
+    "feedback": {
+      "correct_title": "Correct Diagnosis",
+      "incorrect_title": "Incorrect Diagnosis",
+      "show_correct_answer_after_submission": true,
+      "show_debrief_after_submission": true
+    }
+  },
+
+  "ground_truth": {
+    "visibility": "hidden_until_session_end",
+
+    "final_diagnosis": {
+      "option_id": "acute_gastroenteritis",
+      "label": "Acute Gastroenteritis",
+      "accepted_labels": [
+        "acute gastroenteritis",
+        "gastroenteritis"
+      ]
+    },
+
+    "secondary_findings": [
+      "Microcytic anemia pattern with low hemoglobin and low MCV",
+      "Low potassium",
+      "Skin rash documented on examination"
+    ],
+
+    "severity": null,
+
+    "management_in_source_chart": [
+      "Hospital admission for approximately 3 days",
+      "Cefotaxime",
+      "Zinc",
+      "Nutritional support",
+      "NG tube feeding support",
+      "Rash treatment documented in the source chart"
+    ],
+
+    "outcome_in_source_chart": "Improved and later discharged home.",
+
+    "debrief": {
+      "summary": "The case is most consistent with acute gastroenteritis presenting with vomiting and diarrhea. Additional documented findings include a microcytic anemia pattern, hypokalemia, and a skin rash.",
+
+      "learning_points": [
+        "Separate caregiver-reported history from findings obtained during physical examination.",
+        "Do not treat a measured hospital temperature as proof of fever before presentation.",
+        "Laboratory and imaging data should be reviewed as investigations rather than recalled by the simulated caregiver.",
+        "Interpret vomiting in the context of the complete clinical picture rather than from a single symptom alone.",
+        "Recognize additional laboratory abnormalities without allowing them to replace the primary presenting diagnosis."
+      ]
+    }
+  },
+
+  "field_descriptions": {
+    "simulation.opening.patient_line": "the mother's chief complaint and the reason she brought the infant for medical assessment",
+    "simulation.respondent.role": "who is answering the doctor's questions during the encounter",
+    "simulation.respondent.relationship_to_patient": "the respondent's relationship to the infant",
+    "simulation.respondent.speaks_for_patient": "whether the caregiver is answering on behalf of the infant",
+
+    "patient.Name": "the baby's name",
+    "patient.Age": "the baby's age",
+    "patient.Sex": "the baby's sex",
+    "patient.Weight": "the baby's weight",
+    "patient.Social_Status": "the baby's home and family situation",
+
+    "history.Vomiting": "whether the baby vomits and the character of the vomiting",
+    "history.Diarrhea": "whether the baby has diarrhea or loose stools",
+    "history.Fever": "whether the mother knows of fever before the simulated visit",
+    "history.Systems_Review": "other complaints or symptoms reported in the history",
+    "history.Previous_Medications": "medicines or treatments received before the simulated visit",
+    "history.Allergy": "known allergy history",
+    "history.Adverse_Drug_Reaction": "previous adverse drug reactions",
+
+    "physical_exam.Body_Temperature": "measured body temperature during examination",
+    "physical_exam.Pulse": "measured pulse or heart rate",
+    "physical_exam.Respiratory_Rate": "measured respiratory rate",
+    "physical_exam.General_Appearance": "general appearance on examination",
+    "physical_exam.Chest": "chest examination findings",
+    "physical_exam.Heart": "cardiovascular examination findings",
+    "physical_exam.Abdomen": "abdominal examination findings",
+    "physical_exam.Neurological": "neurological examination findings",
+    "physical_exam.Skin_Rash": "presence or absence of a skin rash on examination",
+
+    "laboratory_investigations.WBC_Count": "white blood cell count",
+    "laboratory_investigations.Lymphocyte_Percent": "lymphocyte percentage",
+    "laboratory_investigations.RBC_Count": "red blood cell count",
+    "laboratory_investigations.Hemoglobin": "hemoglobin level",
+    "laboratory_investigations.Hematocrit": "hematocrit",
+    "laboratory_investigations.MCV": "mean corpuscular volume",
+    "laboratory_investigations.MCH": "mean corpuscular hemoglobin",
+    "laboratory_investigations.MCHC": "mean corpuscular hemoglobin concentration",
+    "laboratory_investigations.Platelet_Count": "platelet count",
+    "laboratory_investigations.Sodium": "serum sodium",
+    "laboratory_investigations.Potassium": "serum potassium",
+    "laboratory_investigations.Creatinine": "serum creatinine",
+    "laboratory_investigations.Urea": "serum urea",
+    "laboratory_investigations.CRP": "C-reactive protein",
+
+    "imaging.xray.available": "whether the X-ray study is available",
+    "imaging.xray.study_name": "name of the available radiographic study",
+    "imaging.xray.body_part": "body regions included in the X-ray",
+    "imaging.xray.report_result": "written radiology result if available"
+  },
+
+  "simulation_flow": [
+    {
+      "phase": 1,
+      "name": "case_start",
+      "release": [
+        "presentation",
+        "patient.Age",
+        "patient.Sex",
+        "simulation.opening.patient_line"
+      ]
+    },
+
+    {
+      "phase": 2,
+      "name": "history_taking",
+      "interaction": "chat",
+      "release_on_request": [
+        "patient",
+        "history",
+        "simulation.respondent"
+      ]
+    },
+
+    {
+      "phase": 3,
+      "name": "physical_examination",
+      "interaction": "physical_exam_ui",
+      "release_via": "physical_exam_ui"
+    },
+
+    {
+      "phase": 4,
+      "name": "investigations",
+      "interaction": "investigations_ui",
+      "release_via": "investigations_ui"
+    },
+
+    {
+      "phase": 5,
+      "name": "imaging",
+      "interaction": "imaging_ui",
+      "release_via": "imaging_ui"
+    },
+
+    {
+      "phase": 6,
+      "name": "end_session",
+      "trigger": "learner_clicks_end_session",
+      "locks_chat": true
+    },
+
+    {
+      "phase": 7,
+      "name": "final_diagnosis",
+      "collect": [
+        "learner_assessment.final_diagnosis"
+      ]
+    },
+
+    {
+      "phase": 8,
+      "name": "diagnosis_feedback",
+      "compare_against": "ground_truth.final_diagnosis.option_id"
+    },
+
+    {
+      "phase": 9,
+      "name": "debrief",
+      "reveal": [
+        "ground_truth.final_diagnosis",
+        "ground_truth.secondary_findings",
+        "ground_truth.debrief"
+      ]
+    }
+  ],
+
+  "data_quality": {
+    "missing_history_fields": [
+      "history.Fever"
+    ],
+
+    "missing_report_fields": [
+      "imaging.xray.report_result"
+    ],
+
+    "manual_review_flags": [
+      "Previous medication names were transcribed from handwritten source material and should be reviewed before production use."
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "case_id": "UCI_REG_PEDS_APPENDICITIS_739",
+  "source": {
+    "dataset": "Regensburg Pediatric Appendicitis (UCI)",
+    "source_case_index": 739,
+    "source_ultrasound_number": 108,
+    "data_fidelity": "All medical values are copied directly from the source case. null means the value was not provided in the dataset."
+  },
+  "simulation": {
+    "type": "diagnostic_clinical_case",
+    "opening": {
+      "patient_line": "I have pain in the lower right side of my abdomen.",
+      "source_verbatim": false,
+      "derived_from": {
+        "Lower_Right_Abd_Pain": "yes"
+      }
+    },
+    "information_policy": {
+      "patient_actor_can_access": [
+        "patient",
+        "history"
+      ],
+      "physical_exam_released_only_when_examined": true,
+      "laboratory_results_released_only_when_requested": true,
+      "ultrasound_released_only_when_requested": true,
+      "ground_truth_hidden_until_debrief": true,
+      "missing_value_policy": "Never invent missing information. If a value is null, report it as not documented."
+    },
+    "patient_actor_rules": [
+      "Use only information contained in patient and history.",
+      "Do not invent symptoms, duration, vital signs, or history.",
+      "Do not reveal laboratory results.",
+      "Do not reveal ultrasound findings.",
+      "Do not reveal diagnosis, severity, management, or outcome.",
+      "If asked about information not present in the source case, state that the information is not documented."
+    ]
+  },
+  "patient": {
+    "Age": 13.49,
+    "Sex": "female",
+    "Height": 158.0,
+    "Weight": 46.0,
+    "BMI": 18.43
+  },
+  "history": {
+    "Migratory_Pain": "no",
+    "Nausea": "no",
+    "Loss_of_Appetite": "no",
+    "Dysuria": null,
+    "Stool": "normal"
+  },
+  "physical_exam": {
+    "Lower_Right_Abd_Pain": "yes",
+    "Contralateral_Rebound_Tenderness": "no",
+    "Coughing_Pain": "no",
+    "Peritonitis": "local",
+    "Psoas_Sign": "no",
+    "Ipsilateral_Rebound_Tenderness": "no",
+    "Body_Temperature": 37.2
+  },
+  "laboratory_investigations": {
+    "WBC_Count": 6.9,
+    "Neutrophil_Percentage": 51.0,
+    "Segmented_Neutrophils": null,
+    "Neutrophilia": "no",
+    "RBC_Count": 4.45,
+    "Hemoglobin": 13.5,
+    "RDW": 12.0,
+    "Thrombocyte_Count": 302.0,
+    "CRP": 5.0,
+    "Ketones_in_Urine": "no",
+    "RBC_in_Urine": "no",
+    "WBC_in_Urine": "no"
+  },
+  "clinical_scores": {
+    "Alvarado_Score": 2.0,
+    "Paedriatic_Appendicitis_Score": 2.0
+  },
+  "imaging": {
+    "ultrasound": {
+      "findings": {
+        "US_Performed": "yes",
+        "US_Number": 108.0,
+        "Appendix_on_US": "yes",
+        "Appendix_Diameter": 10.9,
+        "Free_Fluids": "no",
+        "Appendix_Wall_Layers": "intact",
+        "Target_Sign": null,
+        "Appendicolith": "no",
+        "Perfusion": null,
+        "Perforation": "no",
+        "Surrounding_Tissue_Reaction": "yes",
+        "Appendicular_Abscess": "no",
+        "Abscess_Location": null,
+        "Pathological_Lymph_Nodes": "no",
+        "Lymph_Nodes_Location": null,
+        "Bowel_Wall_Thickening": "no",
+        "Conglomerate_of_Bowel_Loops": "no",
+        "Ileus": "no",
+        "Coprostasis": "no",
+        "Meteorism": "no",
+        "Enteritis": "no",
+        "Gynecological_Findings": "keine"
+      },
+      "image_binding": {
+        "binding_key": "US_108",
+        "assets": [],
+        "status": "pending_image_attachment"
+      }
+    }
+  },
+  "ground_truth": {
+    "visibility": "hidden_from_learner",
+    "Diagnosis_Presumptive": "appendicitis",
+    "Diagnosis": "appendicitis",
+    "Severity": "uncomplicated",
+    "Management": "primary surgical",
+    "Length_of_Stay": 4.0
+  },
+  "simulation_flow": [
+    {
+      "phase": 1,
+      "name": "initial_presentation",
+      "release": [
+        "patient.Age",
+        "patient.Sex",
+        "simulation.opening.patient_line"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "history",
+      "release_on_request": [
+        "history"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "physical_examination",
+      "release_on_exam": [
+        "physical_exam"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "laboratory_investigations",
+      "release_on_order": [
+        "laboratory_investigations"
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "ultrasound",
+      "release_on_order": [
+        "imaging.ultrasound.findings",
+        "imaging.ultrasound.image_binding.assets"
+      ]
+    },
+    {
+      "phase": 6,
+      "name": "learner_decision",
+      "collect": [
+        "working_diagnosis",
+        "severity_assessment",
+        "management_plan"
+      ]
+    },
+    {
+      "phase": 7,
+      "name": "debrief",
+      "reveal": [
+        "ground_truth"
+      ]
+    }
+  ],
+  "data_quality": {
+    "total_source_fields": 58,
+    "available_source_fields": 52,
+    "missing_source_fields_count": 6,
+    "missing_source_fields": [
+      "Segmented_Neutrophils",
+      "Dysuria",
+      "Target_Sign",
+      "Perfusion",
+      "Abscess_Location",
+      "Lymph_Nodes_Location"
+    ]
+  },
+  "source_raw_fields": {
+    "Age": 13.49,
+    "BMI": 18.43,
+    "Sex": "female",
+    "Height": 158.0,
+    "Weight": 46.0,
+    "Length_of_Stay": 4.0,
+    "Management": "primary surgical",
+    "Severity": "uncomplicated",
+    "Diagnosis_Presumptive": "appendicitis",
+    "Diagnosis": "appendicitis",
+    "Alvarado_Score": 2.0,
+    "Paedriatic_Appendicitis_Score": 2.0,
+    "Appendix_on_US": "yes",
+    "Appendix_Diameter": 10.9,
+    "Migratory_Pain": "no",
+    "Lower_Right_Abd_Pain": "yes",
+    "Contralateral_Rebound_Tenderness": "no",
+    "Coughing_Pain": "no",
+    "Nausea": "no",
+    "Loss_of_Appetite": "no",
+    "Body_Temperature": 37.2,
+    "WBC_Count": 6.9,
+    "Neutrophil_Percentage": 51.0,
+    "Segmented_Neutrophils": null,
+    "Neutrophilia": "no",
+    "RBC_Count": 4.45,
+    "Hemoglobin": 13.5,
+    "RDW": 12.0,
+    "Thrombocyte_Count": 302.0,
+    "Ketones_in_Urine": "no",
+    "RBC_in_Urine": "no",
+    "WBC_in_Urine": "no",
+    "CRP": 5.0,
+    "Dysuria": null,
+    "Stool": "normal",
+    "Peritonitis": "local",
+    "Psoas_Sign": "no",
+    "Ipsilateral_Rebound_Tenderness": "no",
+    "US_Performed": "yes",
+    "US_Number": 108.0,
+    "Free_Fluids": "no",
+    "Appendix_Wall_Layers": "intact",
+    "Target_Sign": null,
+    "Appendicolith": "no",
+    "Perfusion": null,
+    "Perforation": "no",
+    "Surrounding_Tissue_Reaction": "yes",
+    "Appendicular_Abscess": "no",
+    "Abscess_Location": null,
+    "Pathological_Lymph_Nodes": "no",
+    "Lymph_Nodes_Location": null,
+    "Bowel_Wall_Thickening": "no",
+    "Conglomerate_of_Bowel_Loops": "no",
+    "Ileus": "no",
+    "Coprostasis": "no",
+    "Meteorism": "no",
+    "Enteritis": "no",
+    "Gynecological_Findings": "keine"
+  }
+}
